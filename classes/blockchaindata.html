@@ -1,0 +1,831 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BlockchainData | hardhat</title>
+	<meta name="description" content="Documentation for hardhat">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">hardhat</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="blockchaindata.html">BlockchainData</a>
+				</li>
+			</ul>
+			<h1>Class BlockchainData</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">BlockchainData</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="blockchaindata.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_blockreservations" class="tsd-kind-icon">_block<wbr>Reservations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_blocksbyhash" class="tsd-kind-icon">_blocks<wbr>ByHash</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_blocksbynumber" class="tsd-kind-icon">_blocks<wbr>ByNumber</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_blocksbytransactions" class="tsd-kind-icon">_blocks<wbr>ByTransactions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_common" class="tsd-kind-icon">_common</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_totaldifficulty" class="tsd-kind-icon">_total<wbr>Difficulty</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_transactionreceipts" class="tsd-kind-icon">_transaction<wbr>Receipts</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_transactions" class="tsd-kind-icon">_transactions</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_calculatetimestampforreservedblock" class="tsd-kind-icon">_calculate<wbr>Timestamp<wbr>For<wbr>Reserved<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_findblockreservation" class="tsd-kind-icon">_find<wbr>Block<wbr>Reservation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="blockchaindata.html#_removereservation" class="tsd-kind-icon">_remove<wbr>Reservation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#addblock" class="tsd-kind-icon">add<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#addtransaction" class="tsd-kind-icon">add<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#addtransactionreceipt" class="tsd-kind-icon">add<wbr>Transaction<wbr>Receipt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#cancelreservationwithblock" class="tsd-kind-icon">cancel<wbr>Reservation<wbr>With<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#fulfillblockreservation" class="tsd-kind-icon">fulfill<wbr>Block<wbr>Reservation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#getblockbyhash" class="tsd-kind-icon">get<wbr>Block<wbr>ByHash</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#getblockbynumber" class="tsd-kind-icon">get<wbr>Block<wbr>ByNumber</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#getblockbytransactionhash" class="tsd-kind-icon">get<wbr>Block<wbr>ByTransaction<wbr>Hash</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#getlogs" class="tsd-kind-icon">get<wbr>Logs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#gettotaldifficulty" class="tsd-kind-icon">get<wbr>Total<wbr>Difficulty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#gettransactionreceipt" class="tsd-kind-icon">get<wbr>Transaction<wbr>Receipt</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#isreservedblock" class="tsd-kind-icon">is<wbr>Reserved<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#removeblock" class="tsd-kind-icon">remove<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="blockchaindata.html#reserveblocks" class="tsd-kind-icon">reserve<wbr>Blocks</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Blockchain<wbr>Data<span class="tsd-signature-symbol">(</span>_common<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Common</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="blockchaindata.html" class="tsd-signature-type">BlockchainData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L27">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:27</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>_common: <span class="tsd-signature-type">Common</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="blockchaindata.html" class="tsd-signature-type">BlockchainData</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_blockreservations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _block<wbr>Reservations</h3>
+					<div class="tsd-signature tsd-kind-icon">_block<wbr>Reservations<span class="tsd-signature-symbol">:</span> <a href="../interfaces/reservation.html" class="tsd-signature-type">Reservation</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = new Array()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L27">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:27</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_blocksbyhash" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _blocks<wbr>ByHash</h3>
+					<div class="tsd-signature tsd-kind-icon">_blocks<wbr>ByHash<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L22">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_blocksbynumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _blocks<wbr>ByNumber</h3>
+					<div class="tsd-signature tsd-kind-icon">_blocks<wbr>ByNumber<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L21">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_blocksbytransactions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _blocks<wbr>ByTransactions</h3>
+					<div class="tsd-signature tsd-kind-icon">_blocks<wbr>ByTransactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L23">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_common" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _common</h3>
+					<div class="tsd-signature tsd-kind-icon">_common<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Common</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L29">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:29</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_totaldifficulty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _total<wbr>Difficulty</h3>
+					<div class="tsd-signature tsd-kind-icon">_total<wbr>Difficulty<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L26">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:26</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_transactionreceipts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _transaction<wbr>Receipts</h3>
+					<div class="tsd-signature tsd-kind-icon">_transaction<wbr>Receipts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/rpcreceiptoutput.html" class="tsd-signature-type">RpcReceiptOutput</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L25">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:25</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_transactions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _transactions</h3>
+					<div class="tsd-signature tsd-kind-icon">_transactions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../globals.html#typedtransaction" class="tsd-signature-type">TypedTransaction</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L24">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_calculatetimestampforreservedblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _calculate<wbr>Timestamp<wbr>For<wbr>Reserved<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_calculate<wbr>Timestamp<wbr>For<wbr>Reserved<wbr>Block<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L229">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:229</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">BN</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_findblockreservation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _find<wbr>Block<wbr>Reservation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_find<wbr>Block<wbr>Reservation<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L153">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:153</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="_removereservation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _remove<wbr>Reservation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">_remove<wbr>Reservation<span class="tsd-signature-symbol">(</span>index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/reservation.html" class="tsd-signature-type">Reservation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L165">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:165</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>WARNING: this method only removes the given reservation and can result in
+										gaps in the reservations array. Ideally we should have a method that
+									removes the given reservation and all the following reservations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/reservation.html" class="tsd-signature-type">Reservation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addblock" class="tsd-anchor"></a>
+					<h3>add<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Block<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Block</span>, totalDifficulty<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L107">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:107</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <span class="tsd-signature-type">Block</span></h5>
+								</li>
+								<li>
+									<h5>totalDifficulty: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addtransaction" class="tsd-anchor"></a>
+					<h3>add<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Transaction<span class="tsd-signature-symbol">(</span>transaction<span class="tsd-signature-symbol">: </span><a href="../globals.html#typedtransaction" class="tsd-signature-type">TypedTransaction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L141">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:141</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transaction: <a href="../globals.html#typedtransaction" class="tsd-signature-type">TypedTransaction</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addtransactionreceipt" class="tsd-anchor"></a>
+					<h3>add<wbr>Transaction<wbr>Receipt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Transaction<wbr>Receipt<span class="tsd-signature-symbol">(</span>receipt<span class="tsd-signature-symbol">: </span><a href="../interfaces/rpcreceiptoutput.html" class="tsd-signature-type">RpcReceiptOutput</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L145">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:145</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>receipt: <a href="../interfaces/rpcreceiptoutput.html" class="tsd-signature-type">RpcReceiptOutput</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="cancelreservationwithblock" class="tsd-anchor"></a>
+					<h3>cancel<wbr>Reservation<wbr>With<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Reservation<wbr>With<wbr>Block<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/reservation.html" class="tsd-signature-type">Reservation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L180">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:180</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cancel and return the reservation that has block <code>blockNumber</code></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/reservation.html" class="tsd-signature-type">Reservation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="fulfillblockreservation" class="tsd-anchor"></a>
+					<h3>fulfill<wbr>Block<wbr>Reservation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">fulfill<wbr>Block<wbr>Reservation<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L184">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockbyhash" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>ByHash</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>ByHash<span class="tsd-signature-symbol">(</span>blockHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L52">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:52</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockHash: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockbynumber" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>ByNumber</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>ByNumber<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L48">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getblockbytransactionhash" class="tsd-anchor"></a>
+					<h3>get<wbr>Block<wbr>ByTransaction<wbr>Hash</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Block<wbr>ByTransaction<wbr>Hash<span class="tsd-signature-symbol">(</span>transactionHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L56">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:56</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionHash: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Block</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getlogs" class="tsd-anchor"></a>
+					<h3>get<wbr>Logs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Logs<span class="tsd-signature-symbol">(</span>filterParams<span class="tsd-signature-symbol">: </span><a href="../interfaces/filterparams.html" class="tsd-signature-type">FilterParams</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/rpclogoutput.html" class="tsd-signature-type">RpcLogOutput</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L72">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:72</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filterParams: <a href="../interfaces/filterparams.html" class="tsd-signature-type">FilterParams</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/rpclogoutput.html" class="tsd-signature-type">RpcLogOutput</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettotaldifficulty" class="tsd-anchor"></a>
+					<h3>get<wbr>Total<wbr>Difficulty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Total<wbr>Difficulty<span class="tsd-signature-symbol">(</span>blockHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BN</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L68">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:68</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockHash: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">BN</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettransaction" class="tsd-anchor"></a>
+					<h3>get<wbr>Transaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<span class="tsd-signature-symbol">(</span>transactionHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">AccessListEIP2930Transaction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">FeeMarketEIP1559Transaction</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L60">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:60</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionHash: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Transaction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">AccessListEIP2930Transaction</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">FeeMarketEIP1559Transaction</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gettransactionreceipt" class="tsd-anchor"></a>
+					<h3>get<wbr>Transaction<wbr>Receipt</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Transaction<wbr>Receipt<span class="tsd-signature-symbol">(</span>transactionHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/rpcreceiptoutput.html" class="tsd-signature-type">RpcReceiptOutput</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L64">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:64</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>transactionHash: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/rpcreceiptoutput.html" class="tsd-signature-type">RpcReceiptOutput</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isreservedblock" class="tsd-anchor"></a>
+					<h3>is<wbr>Reserved<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Reserved<wbr>Block<span class="tsd-signature-symbol">(</span>blockNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L149">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>blockNumber: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeblock" class="tsd-anchor"></a>
+					<h3>remove<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Block<span class="tsd-signature-symbol">(</span>block<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Block</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L126">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:126</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>WARNING: this method can leave the blockchain in an invalid state where
+										there are gaps between blocks. Ideally we should have a method that removes
+									the given block and all the following blocks.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>block: <span class="tsd-signature-type">Block</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reserveblocks" class="tsd-anchor"></a>
+					<h3>reserve<wbr>Blocks</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reserve<wbr>Blocks<span class="tsd-signature-symbol">(</span>first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span>, count<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span>, interval<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span>, previousBlockStateRoot<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, previousBlockTotalDifficulty<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BN</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/NomicFoundation/hardhat/blob/af0ea339/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts#L31">Users/sbacha/hardhat/packages/hardhat-core/src/internal/hardhat-network/provider/BlockchainData.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>first: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+								<li>
+									<h5>count: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+								<li>
+									<h5>interval: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+								<li>
+									<h5>previousBlockStateRoot: <span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+								<li>
+									<h5>previousBlockTotalDifficulty: <span class="tsd-signature-type">BN</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="blockchaindata.html" class="tsd-kind-icon">Blockchain<wbr>Data</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="blockchaindata.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_blockreservations" class="tsd-kind-icon">_block<wbr>Reservations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_blocksbyhash" class="tsd-kind-icon">_blocks<wbr>ByHash</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_blocksbynumber" class="tsd-kind-icon">_blocks<wbr>ByNumber</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_blocksbytransactions" class="tsd-kind-icon">_blocks<wbr>ByTransactions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_common" class="tsd-kind-icon">_common</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_totaldifficulty" class="tsd-kind-icon">_total<wbr>Difficulty</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_transactionreceipts" class="tsd-kind-icon">_transaction<wbr>Receipts</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_transactions" class="tsd-kind-icon">_transactions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_calculatetimestampforreservedblock" class="tsd-kind-icon">_calculate<wbr>Timestamp<wbr>For<wbr>Reserved<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_findblockreservation" class="tsd-kind-icon">_find<wbr>Block<wbr>Reservation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="blockchaindata.html#_removereservation" class="tsd-kind-icon">_remove<wbr>Reservation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#addblock" class="tsd-kind-icon">add<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#addtransaction" class="tsd-kind-icon">add<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#addtransactionreceipt" class="tsd-kind-icon">add<wbr>Transaction<wbr>Receipt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#cancelreservationwithblock" class="tsd-kind-icon">cancel<wbr>Reservation<wbr>With<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#fulfillblockreservation" class="tsd-kind-icon">fulfill<wbr>Block<wbr>Reservation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#getblockbyhash" class="tsd-kind-icon">get<wbr>Block<wbr>ByHash</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#getblockbynumber" class="tsd-kind-icon">get<wbr>Block<wbr>ByNumber</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#getblockbytransactionhash" class="tsd-kind-icon">get<wbr>Block<wbr>ByTransaction<wbr>Hash</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#getlogs" class="tsd-kind-icon">get<wbr>Logs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#gettotaldifficulty" class="tsd-kind-icon">get<wbr>Total<wbr>Difficulty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#gettransaction" class="tsd-kind-icon">get<wbr>Transaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#gettransactionreceipt" class="tsd-kind-icon">get<wbr>Transaction<wbr>Receipt</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#isreservedblock" class="tsd-kind-icon">is<wbr>Reserved<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#removeblock" class="tsd-kind-icon">remove<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="blockchaindata.html#reserveblocks" class="tsd-kind-icon">reserve<wbr>Blocks</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

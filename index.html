@@ -1,0 +1,3262 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>hardhat</title>
+	<meta name="description" content="Documentation for hardhat">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">hardhat</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>hardhat</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><img src="https://user-images.githubusercontent.com/176499/96893278-ebc67580-1460-11eb-9530-d5df3a3d65d0.png" alt=""> <a href="https://www.npmjs.org/package/hardhat"><img src="https://img.shields.io/npm/v/hardhat.svg?style=flat-square" alt="NPM Package"></a></p>
+				<hr>
+				<p>Hardhat is an Ethereum development environment for professionals. It facilitates performing frequent tasks, such as running tests, automatically checking code for mistakes or interacting with a smart contract. Check out the <a href="https://hardhat.org/plugins/">plugin list</a> to use it with your existing tools.</p>
+				<p>Built by the <a href="https://nomic.foundation/">Nomic Foundation</a> for the Ethereum community.</p>
+				<p>Join our <a href="https://hardhat.org/discord">Hardhat Support Discord server</a> to stay up to date on new releases, plugins and tutorials.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p>To install Hardhat, go to an empty folder, initialize an <code>npm</code> project (i.e. <code>npm init</code>), and run</p>
+				<pre><code>npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> hardhat
+</code></pre>
+				<p>Once it&#39;s installed, just run this command and follow its instructions:</p>
+				<pre><code><span class="hljs-attribute">npx hardhat</span>
+</code></pre>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p>On <a href="https://hardhat.org">Hardhat&#39;s website</a> you will find:</p>
+				<ul>
+					<li><a href="https://hardhat.org/getting-started/">Guides to get started</a></li>
+					<li><a href="https://hardhat.org/hardhat-network/">Hardhat Network</a></li>
+					<li><a href="https://hardhat.org/plugins/">Plugin list</a></li>
+				</ul>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<p>Contributions are always welcome! Feel free to open any issue or send a pull request.</p>
+				<p>Go to <a href="./CONTRIBUTING.md">CONTRIBUTING.md</a> to learn about how to set up Hardhat&#39;s development environment.</p>
+				<a href="#feedback-help-and-news" id="feedback-help-and-news" style="color: inherit; text-decoration: none;">
+					<h2>Feedback, help and news</h2>
+				</a>
+				<p><a href="https://hardhat.org/discord">Hardhat Support Discord server</a>: for questions and feedback.</p>
+				<p><a href="https://twitter.com/HardhatHQ">Follow Hardhat on Twitter.</a></p>
+				<a href="#happy-building" id="happy-building" style="color: inherit; text-decoration: none;">
+					<h2>Happy building!</h2>
+				</a>
+				<p>👷‍♀️👷‍♂️👷‍♀️👷‍♂️👷‍♀️👷‍♂️👷‍♀️👷‍♂️👷‍♀️👷‍♂️👷‍♀️👷‍♂️👷‍♀️👷‍♂️</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-is-external">
+						<a href="enums/capability.html" class="tsd-kind-icon">Capability</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/compilationjobcreationerrorreason.html" class="tsd-kind-icon">Compilation<wbr>Job<wbr>Creation<wbr>Error<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/compilerplatform.html" class="tsd-kind-icon">Compiler<wbr>Platform</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/contractfunctiontype.html" class="tsd-kind-icon">Contract<wbr>Function<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/contractfunctionvisibility.html" class="tsd-kind-icon">Contract<wbr>Function<wbr>Visibility</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/contracttype.html" class="tsd-kind-icon">Contract<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/hardforkname.html" class="tsd-kind-icon">Hardfork<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/jumptype.html" class="tsd-kind-icon">Jump<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/miningtimerstate.html" class="tsd-kind-icon">Mining<wbr>Timer<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/opcode.html" class="tsd-kind-icon">Opcode</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/stacktraceentrytype.html" class="tsd-kind-icon">Stack<wbr>Trace<wbr>Entry<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/type.html" class="tsd-kind-icon">Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/abihelpers.html" class="tsd-kind-icon">Abi<wbr>Helpers</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="classes/accesslisteip2930transaction.html" class="tsd-kind-icon">Access<wbr>ListEIP2930<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="classes/accesslists.html" class="tsd-kind-icon">Access<wbr>Lists</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/analytics.html" class="tsd-kind-icon">Analytics</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/anonymizer.html" class="tsd-kind-icon">Anonymizer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/argumentsparser.html" class="tsd-kind-icon">Arguments<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/artifacts.html" class="tsd-kind-icon">Artifacts</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/automaticgaspriceprovider.html" class="tsd-kind-icon">Automatic<wbr>Gas<wbr>Price<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/automaticgasprovider.html" class="tsd-kind-icon">Automatic<wbr>Gas<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/automaticsenderprovider.html" class="tsd-kind-icon">Automatic<wbr>Sender<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/backwardscompatibilityprovideradapter.html" class="tsd-kind-icon">Backwards<wbr>Compatibility<wbr>Provider<wbr>Adapter</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter tsd-is-external">
+						<a href="classes/basetransaction.html" class="tsd-kind-icon">Base<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/blockchainbase.html" class="tsd-kind-icon">Blockchain<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/blockchaindata.html" class="tsd-kind-icon">Blockchain<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/bytecode.html" class="tsd-kind-icon">Bytecode</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/bytecodetrie.html" class="tsd-kind-icon">Bytecode<wbr>Trie</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/chainidvalidatorprovider.html" class="tsd-kind-icon">Chain<wbr>IdValidator<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/compilationjob.html" class="tsd-kind-icon">Compilation<wbr>Job</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/compiler.html" class="tsd-kind-icon">Compiler</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/compilerdownloader.html" class="tsd-kind-icon">Compiler<wbr>Downloader</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/consolelogger.html" class="tsd-kind-icon">Console<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contract.html" class="tsd-kind-icon">Contract</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contractfunction.html" class="tsd-kind-icon">Contract<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/contractsidentifier.html" class="tsd-kind-icon">Contracts<wbr>Identifier</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/customerror.html" class="tsd-kind-icon">Custom<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/debugmodule.html" class="tsd-kind-icon">Debug<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dependencygraph.html" class="tsd-kind-icon">Dependency<wbr>Graph</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/environment.html" class="tsd-kind-icon">Environment</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/errorinferrer.html" class="tsd-kind-icon">Error<wbr>Inferrer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/ethmodule.html" class="tsd-kind-icon">Eth<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/eventemitterwrapper.html" class="tsd-kind-icon">Event<wbr>Emitter<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/evmmodule.html" class="tsd-kind-icon">Evm<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/extendermanager.html" class="tsd-kind-icon">Extender<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fakesenderaccesslisteip2930transaction.html" class="tsd-kind-icon">Fake<wbr>Sender<wbr>Access<wbr>ListEIP2930<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fakesendereip1559transaction.html" class="tsd-kind-icon">Fake<wbr>SenderEIP1559<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fakesendertransaction.html" class="tsd-kind-icon">Fake<wbr>Sender<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="classes/feemarketeip1559transaction.html" class="tsd-kind-icon">Fee<wbr>MarketEIP1559<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fixedgaspriceprovider.html" class="tsd-kind-icon">Fixed<wbr>Gas<wbr>Price<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fixedgasprovider.html" class="tsd-kind-icon">Fixed<wbr>Gas<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/fixedsenderprovider.html" class="tsd-kind-icon">Fixed<wbr>Sender<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/forkblockchain.html" class="tsd-kind-icon">Fork<wbr>Blockchain</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/forkstatemanager.html" class="tsd-kind-icon">Fork<wbr>State<wbr>Manager</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/ganachegasmultiplierprovider.html" class="tsd-kind-icon">Ganache<wbr>Gas<wbr>Multiplier<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hdwalletprovider.html" class="tsd-kind-icon">HDWallet<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatblockchain.html" class="tsd-kind-icon">Hardhat<wbr>Blockchain</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatcontext.html" class="tsd-kind-icon">Hardhat<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhaterror.html" class="tsd-kind-icon">Hardhat<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatmodule.html" class="tsd-kind-icon">Hardhat<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatnetworkprovider.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatnode.html" class="tsd-kind-icon">Hardhat<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/hardhatpluginerror.html" class="tsd-kind-icon">Hardhat<wbr>Plugin<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/helpprinter.html" class="tsd-kind-icon">Help<wbr>Printer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/httpprovider.html" class="tsd-kind-icon">Http<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/instruction.html" class="tsd-kind-icon">Instruction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/internalerror.html" class="tsd-kind-icon">Internal<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/invalidargumentserror.html" class="tsd-kind-icon">Invalid<wbr>Arguments<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/invalidinputerror.html" class="tsd-kind-icon">Invalid<wbr>Input<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/invalidjsoninputerror.html" class="tsd-kind-icon">Invalid<wbr>Json<wbr>Input<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/invalidrequesterror.html" class="tsd-kind-icon">Invalid<wbr>Request<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/invalidresponseerror.html" class="tsd-kind-icon">Invalid<wbr>Response<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/jsonrpcclient.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/jsonrpchandler.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/jsonrpcserver.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/localaccountsprovider.html" class="tsd-kind-icon">Local<wbr>Accounts<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/methodnotfounderror.html" class="tsd-kind-icon">Method<wbr>Not<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/methodnotsupportederror.html" class="tsd-kind-icon">Method<wbr>Not<wbr>Supported<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/miningtimer.html" class="tsd-kind-icon">Mining<wbr>Timer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/moduleslogger.html" class="tsd-kind-icon">Modules<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/multipliedgasestimationprovider.html" class="tsd-kind-icon">Multiplied<wbr>Gas<wbr>Estimation<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/mutex.html" class="tsd-kind-icon">Mutex</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/nativecompiler.html" class="tsd-kind-icon">Native<wbr>Compiler</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/netmodule.html" class="tsd-kind-icon">Net<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/nomiclabshardhatpluginerror.html" class="tsd-kind-icon">Nomic<wbr>Labs<wbr>Hardhat<wbr>Plugin<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/overriddentaskdefinition.html" class="tsd-kind-icon">Overridden<wbr>Task<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/parser.html" class="tsd-kind-icon">Parser</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/personalmodule.html" class="tsd-kind-icon">Personal<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/providererror.html" class="tsd-kind-icon">Provider<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/providerwrapper.html" class="tsd-kind-icon">Provider<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/providerwrapperwithchainid.html" class="tsd-kind-icon">Provider<wbr>Wrapper<wbr>With<wbr>Chain<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/readonlyvalideip1559transaction.html" class="tsd-kind-icon">Read<wbr>Only<wbr>ValidEIP1559<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/readonlyvalideip2930transaction.html" class="tsd-kind-icon">Read<wbr>Only<wbr>ValidEIP2930<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/readonlyvalidtransaction.html" class="tsd-kind-icon">Read<wbr>Only<wbr>Valid<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/reporter.html" class="tsd-kind-icon">Reporter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/resolvedfile.html" class="tsd-kind-icon">Resolved<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/resolver.html" class="tsd-kind-icon">Resolver</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/returndata.html" class="tsd-kind-icon">Return<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/semaphore.html" class="tsd-kind-icon">Semaphore</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/senderprovider.html" class="tsd-kind-icon">Sender<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/simpletaskdefinition.html" class="tsd-kind-icon">Simple<wbr>Task<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/soliditycallsite.html" class="tsd-kind-icon">Solidity<wbr>Call<wbr>Site</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/solidityerror.html" class="tsd-kind-icon">Solidity<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/solidityfilescache.html" class="tsd-kind-icon">Solidity<wbr>Files<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/soliditytracer.html" class="tsd-kind-icon">Solidity<wbr>Tracer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/sourcefile.html" class="tsd-kind-icon">Source<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/sourcelocation.html" class="tsd-kind-icon">Source<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/tasksdsl.html" class="tsd-kind-icon">TasksDSL</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-external">
+						<a href="classes/transaction.html" class="tsd-kind-icon">Transaction</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/transactionexecutionerror.html" class="tsd-kind-icon">Transaction<wbr>Execution<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/transactionqueue.html" class="tsd-kind-icon">Transaction<wbr>Queue</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/txpool.html" class="tsd-kind-icon">Tx<wbr>Pool</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/vmdebugtracer.html" class="tsd-kind-icon">VMDebug<wbr>Tracer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/vmtracer.html" class="tsd-kind-icon">VMTracer</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/vmtracedecoder.html" class="tsd-kind-icon">Vm<wbr>Trace<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/web3module.html" class="tsd-kind-icon">Web3<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accesslisteip2930rpctransactionoutput.html" class="tsd-kind-icon">Access<wbr>ListEIP2930<wbr>Rpc<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/accesslisteip2930txdata.html" class="tsd-kind-icon">Access<wbr>ListEIP2930<wbr>TxData</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accesslisttransactionparams.html" class="tsd-kind-icon">Access<wbr>List<wbr>Transaction<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/accountstate.html" class="tsd-kind-icon">Account<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/argumenttype.html" class="tsd-kind-icon">Argument<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/artifact.html" class="tsd-kind-icon">Artifact</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/baseevmmessagetrace.html" class="tsd-kind-icon">Base<wbr>Evm<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/basemessagetrace.html" class="tsd-kind-icon">Base<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/baserpctransactionoutput.html" class="tsd-kind-icon">Base<wbr>Rpc<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/basetransactionparams.html" class="tsd-kind-icon">Base<wbr>Transaction<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/buildinfo.html" class="tsd-kind-icon">Build<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/cliargumenttype.html" class="tsd-kind-icon">CLIArgument<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/clioptionalparamdefinition.html" class="tsd-kind-icon">CLIOptional<wbr>Param<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cache.html" class="tsd-kind-icon">Cache</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cacheentry.html" class="tsd-kind-icon">Cache<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/cachedcompletiondata.html" class="tsd-kind-icon">Cached<wbr>Completion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/callfailederrorstacktraceentry.html" class="tsd-kind-icon">Call<wbr>Failed<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/callmessagetrace.html" class="tsd-kind-icon">Call<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/callparams.html" class="tsd-kind-icon">Call<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/callstackentrystacktraceentry.html" class="tsd-kind-icon">Callstack<wbr>Entry<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commonconfig.html" class="tsd-kind-icon">Common<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilationjobcreationerror.html" class="tsd-kind-icon">Compilation<wbr>Job<wbr>Creation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilationjobscreationresult.html" class="tsd-kind-icon">Compilation<wbr>Jobs<wbr>Creation<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilerbuild.html" class="tsd-kind-icon">Compiler<wbr>Build</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilerinput.html" class="tsd-kind-icon">Compiler<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compileroutput.html" class="tsd-kind-icon">Compiler<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compileroutputbytecode.html" class="tsd-kind-icon">Compiler<wbr>Output<wbr>Bytecode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compileroutputcontract.html" class="tsd-kind-icon">Compiler<wbr>Output<wbr>Contract</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compileroutputsource.html" class="tsd-kind-icon">Compiler<wbr>Output<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compileroutputsources.html" class="tsd-kind-icon">Compiler<wbr>Output<wbr>Sources</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilerpath.html" class="tsd-kind-icon">Compiler<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/compilerslist.html" class="tsd-kind-icon">Compilers<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/completiondata.html" class="tsd-kind-icon">Completion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/completionenv.html" class="tsd-kind-icon">Completion<wbr>Env</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/configurabletaskdefinition.html" class="tsd-kind-icon">Configurable<wbr>Task<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/consolelogarray.html" class="tsd-kind-icon">Console<wbr>Log<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/contractcallrunoutofgaserror.html" class="tsd-kind-icon">Contract<wbr>Call<wbr>Run<wbr>Out<wbr>OfGas<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/contracttoolargeerrorstacktraceentry.html" class="tsd-kind-icon">Contract<wbr>Too<wbr>Large<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/createmessagetrace.html" class="tsd-kind-icon">Create<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/customerrorstacktraceentry.html" class="tsd-kind-icon">Custom<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/debugfile.html" class="tsd-kind-icon">Debug<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/debugmessage.html" class="tsd-kind-icon">Debug<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/decodedcallmessagetrace.html" class="tsd-kind-icon">Decoded<wbr>Call<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/decodedcreatemessagetrace.html" class="tsd-kind-icon">Decoded<wbr>Create<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/dependencies.html" class="tsd-kind-icon">Dependencies</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/directlibrarycallerrorstacktraceentry.html" class="tsd-kind-icon">Direct<wbr>Library<wbr>Call<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/eip1193provider.html" class="tsd-kind-icon">EIP1193<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/eip1559rpctransactionoutput.html" class="tsd-kind-icon">EIP1559<wbr>Rpc<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/eip1559transactionparams.html" class="tsd-kind-icon">EIP1559<wbr>Transaction<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/errordescriptor.html" class="tsd-kind-icon">Error<wbr>Descriptor</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/estimategasresult.html" class="tsd-kind-icon">Estimate<wbr>Gas<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ethsubscription.html" class="tsd-kind-icon">Eth<wbr>Subscription</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/ethereumprovider.html" class="tsd-kind-icon">Ethereum<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/evmstep.html" class="tsd-kind-icon">Evm<wbr>Step</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/failedjsonrpcresponse.html" class="tsd-kind-icon">Failed<wbr>Json<wbr>Rpc<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fallbacknotpayableandnoreceiveerrorstacktraceentry.html" class="tsd-kind-icon">Fallback<wbr>Not<wbr>Payable<wbr>And<wbr>NoReceive<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fallbacknotpayableerrorstacktraceentry.html" class="tsd-kind-icon">Fallback<wbr>Not<wbr>Payable<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/feehistory.html" class="tsd-kind-icon">Fee<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/feemarketeip1559txdata.html" class="tsd-kind-icon">Fee<wbr>MarketEIP1559<wbr>TxData</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filecontent.html" class="tsd-kind-icon">File<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filter.html" class="tsd-kind-icon">Filter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filtercriteria.html" class="tsd-kind-icon">Filter<wbr>Criteria</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/filterparams.html" class="tsd-kind-icon">Filter<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/forkconfig.html" class="tsd-kind-icon">Fork<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/forkednodeconfig.html" class="tsd-kind-icon">Forked<wbr>Node<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/functionnotpayableerrorstacktraceentry.html" class="tsd-kind-icon">Function<wbr>Not<wbr>Payable<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gathertracesresult.html" class="tsd-kind-icon">Gather<wbr>Traces<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/genesisaccount.html" class="tsd-kind-icon">Genesis<wbr>Account</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hdaccountsuserconfig.html" class="tsd-kind-icon">HDAccounts<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardforkhistoryuserconfig.html" class="tsd-kind-icon">Hardfork<wbr>History<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatarguments.html" class="tsd-kind-icon">Hardhat<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatblockchaininterface.html" class="tsd-kind-icon">Hardhat<wbr>Blockchain<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatconfig.html" class="tsd-kind-icon">Hardhat<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkaccountconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Account<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkaccountuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Account<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkchainconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chain<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkchainuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chain<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkchainsuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chains<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkforkingconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Forking<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkforkinguserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Forking<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkhdaccountsconfig.html" class="tsd-kind-icon">Hardhat<wbr>NetworkHDAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkhdaccountsuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>NetworkHDAccounts<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkmempoolconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mempool<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkmempooluserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mempool<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkminingconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mining<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkmininguserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mining<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatnetworkuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatruntimeenvironment.html" class="tsd-kind-icon">Hardhat<wbr>Runtime<wbr>Environment</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/hardhatuserconfig.html" class="tsd-kind-icon">Hardhat<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/httpnetworkconfig.html" class="tsd-kind-icon">Http<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/httpnetworkhdaccountsconfig.html" class="tsd-kind-icon">Http<wbr>NetworkHDAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/httpnetworkuserconfig.html" class="tsd-kind-icon">Http<wbr>Network<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/immutableorderedtransaction.html" class="tsd-kind-icon">Immutable<wbr>Ordered<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/immutablereference.html" class="tsd-kind-icon">Immutable<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/internalfunctioncallstackentry.html" class="tsd-kind-icon">Internal<wbr>Function<wbr>Call<wbr>Stack<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/invalidparamserrorstacktraceentry.html" class="tsd-kind-icon">Invalid<wbr>Params<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jsonrpcrequest.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jsonrpcresponse.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jsonrpcserverconfig.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Server<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/jsonrpctransactiondata.html" class="tsd-kind-icon">Json<wbr>Rpc<wbr>Transaction<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/jsontx.html" class="tsd-kind-icon">Json<wbr>Tx</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/legacyrpctransactionoutput.html" class="tsd-kind-icon">Legacy<wbr>Rpc<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/legacytransactionparams.html" class="tsd-kind-icon">Legacy<wbr>Transaction<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/libraryinfo.html" class="tsd-kind-icon">Library<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/linkreferences.html" class="tsd-kind-icon">Link<wbr>References</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/mineblockresult.html" class="tsd-kind-icon">Mine<wbr>Block<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/missingfallbackorreceiveerrorstacktraceentry.html" class="tsd-kind-icon">Missing<wbr>Fallback<wbr>OrReceive<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/mtimes.html" class="tsd-kind-icon">Mtimes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/multisolcuserconfig.html" class="tsd-kind-icon">Multi<wbr>Solc<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/network.html" class="tsd-kind-icon">Network</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/networksconfig.html" class="tsd-kind-icon">Networks<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/networksuserconfig.html" class="tsd-kind-icon">Networks<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/noncontractaccountcallederrorstacktraceentry.html" class="tsd-kind-icon">Non<wbr>Contract<wbr>Account<wbr>Called<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/optionalparamdefinition.html" class="tsd-kind-icon">Optional<wbr>Param<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/orderedtransaction.html" class="tsd-kind-icon">Ordered<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/otherexecutionerrorstacktraceentry.html" class="tsd-kind-icon">Other<wbr>Execution<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/packagejson.html" class="tsd-kind-icon">Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/panicerrorstacktraceentry.html" class="tsd-kind-icon">Panic<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/paramdefinition.html" class="tsd-kind-icon">Param<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/paramdefinitionsmap.html" class="tsd-kind-icon">Param<wbr>Definitions<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/parseddata.html" class="tsd-kind-icon">Parsed<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/poolstate.html" class="tsd-kind-icon">Pool<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/precompileerrorstacktraceentry.html" class="tsd-kind-icon">Precompile<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/precompilemessagetrace.html" class="tsd-kind-icon">Precompile<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/printoptions.html" class="tsd-kind-icon">Print<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/projectpathsconfig.html" class="tsd-kind-icon">Project<wbr>Paths<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/projectpathsuserconfig.html" class="tsd-kind-icon">Project<wbr>Paths<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/providerconnectinfo.html" class="tsd-kind-icon">Provider<wbr>Connect<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/providermessage.html" class="tsd-kind-icon">Provider<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/providerrpcerror.html" class="tsd-kind-icon">Provider<wbr>Rpc<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rawanalytics.html" class="tsd-kind-icon">Raw<wbr>Analytics</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/requestarguments.html" class="tsd-kind-icon">Request<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reservation.html" class="tsd-kind-icon">Reservation</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/resolvedfilesmap.html" class="tsd-kind-icon">Resolved<wbr>Files<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/returndatasizeerrorstacktraceentry.html" class="tsd-kind-icon">Returndata<wbr>Size<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/reverterrorstacktraceentry.html" class="tsd-kind-icon">Revert<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpcblockoutput.html" class="tsd-kind-icon">Rpc<wbr>Block<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpcdebugtraceoutput.html" class="tsd-kind-icon">Rpc<wbr>Debug<wbr>Trace<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpclogoutput.html" class="tsd-kind-icon">Rpc<wbr>Log<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpcreceiptoutput.html" class="tsd-kind-icon">Rpc<wbr>Receipt<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpcstructlog.html" class="tsd-kind-icon">Rpc<wbr>Struct<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpcsubscribe.html" class="tsd-kind-icon">Rpc<wbr>Subscribe</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rpctransactionrequestinput.html" class="tsd-kind-icon">Rpc<wbr>Transaction<wbr>Request<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/runcallresult.html" class="tsd-kind-icon">Run<wbr>Call<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/runsuperfunction.html" class="tsd-kind-icon">Run<wbr>Super<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/snapshot.html" class="tsd-kind-icon">Snapshot</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/solcbuild.html" class="tsd-kind-icon">Solc<wbr>Build</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/solcconfig.html" class="tsd-kind-icon">Solc<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/solcuserconfig.html" class="tsd-kind-icon">Solc<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/solidityconfig.html" class="tsd-kind-icon">Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcemap.html" class="tsd-kind-icon">Source<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcemaplocation.html" class="tsd-kind-icon">Source<wbr>Map<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcereference.html" class="tsd-kind-icon">Source<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/structlog.html" class="tsd-kind-icon">Struct<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/submessagedata.html" class="tsd-kind-icon">Submessage<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/successfuljsonrpcresponse.html" class="tsd-kind-icon">Successful<wbr>Json<wbr>Rpc<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/suggestion.html" class="tsd-kind-icon">Suggestion</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/taskdefinition.html" class="tsd-kind-icon">Task<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tasksmap.html" class="tsd-kind-icon">Tasks<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/tracingconfig.html" class="tsd-kind-icon">Tracing<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/transactioncache.html" class="tsd-kind-icon">Transaction<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/transitivedependency.html" class="tsd-kind-icon">Transitive<wbr>Dependency</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-external">
+						<a href="interfaces/txoptions.html" class="tsd-kind-icon">Tx<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unmappedsolc063reverterrorstacktraceentry.html" class="tsd-kind-icon">Unmapped<wbr>Solc063<wbr>Revert<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unrecognizedcontractcallstackentrystacktraceentry.html" class="tsd-kind-icon">Unrecognized<wbr>Contract<wbr>Callstack<wbr>Entry<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unrecognizedcontracterrorstacktraceentry.html" class="tsd-kind-icon">Unrecognized<wbr>Contract<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unrecognizedcreatecallstackentrystacktraceentry.html" class="tsd-kind-icon">Unrecognized<wbr>Create<wbr>Callstack<wbr>Entry<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unrecognizedcreateerrorstacktraceentry.html" class="tsd-kind-icon">Unrecognized<wbr>Create<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/unrecognizedfunctionwithoutfallbackerrorstacktraceentry.html" class="tsd-kind-icon">Unrecognized<wbr>Function<wbr>Without<wbr>Fallback<wbr>Error<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/wordmatch.html" class="tsd-kind-icon">Word<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#abortanalytics" class="tsd-kind-icon">Abort<wbr>Analytics</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#accesslist" class="tsd-kind-icon">Access<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#accesslistbuffer" class="tsd-kind-icon">Access<wbr>List<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#accesslistbufferitem" class="tsd-kind-icon">Access<wbr>List<wbr>Buffer<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#accesslisteip2930valuesarray" class="tsd-kind-icon">Access<wbr>ListEIP2930<wbr>Values<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#accesslistitem" class="tsd-kind-icon">Access<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#actiontype" class="tsd-kind-icon">Action<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#addresstotransactions" class="tsd-kind-icon">Address<wbr>ToTransactions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#artifactsemittedperfile" class="tsd-kind-icon">Artifacts<wbr>Emitted<wbr>Per<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#artifactsemittedperjob" class="tsd-kind-icon">Artifacts<wbr>Emitted<wbr>Per<wbr>Job</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#boundexperimentalhardhatnetworkmessagetracehook" class="tsd-kind-icon">Bound<wbr>Experimental<wbr>Hardhat<wbr>Network<wbr>Message<wbr>Trace<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#compilerdownloaderoptions" class="tsd-kind-icon">Compiler<wbr>Downloader<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#configextender" class="tsd-kind-icon">Config<wbr>Extender</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#consolelogentry" class="tsd-kind-icon">Console<wbr>Log<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#consolelogs" class="tsd-kind-icon">Console<wbr>Logs</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#decodedevmmessagetrace" class="tsd-kind-icon">Decoded<wbr>Evm<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#environmentextender" class="tsd-kind-icon">Environment<wbr>Extender</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#evmmessagetrace" class="tsd-kind-icon">Evm<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#experimentalhardhatnetworkmessagetracehook" class="tsd-kind-icon">Experimental<wbr>Hardhat<wbr>Network<wbr>Message<wbr>Trace<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#feemarketeip1559valuesarray" class="tsd-kind-icon">Fee<wbr>MarketEIP1559<wbr>Values<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#globalparam" class="tsd-kind-icon">Global<wbr>Param</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#globalwithhardhatcontext" class="tsd-kind-icon">Global<wbr>With<wbr>Hardhat<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hardforkhistoryconfig" class="tsd-kind-icon">Hardfork<wbr>History<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hardhatnetworkaccountsconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Accounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hardhatnetworkaccountsuserconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Accounts<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hardhatnetworkchainsconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chains<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hardhatparamdefinitions" class="tsd-kind-icon">Hardhat<wbr>Param<wbr>Definitions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#hashtotransaction" class="tsd-kind-icon">Hash<wbr>ToTransaction</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#httpnetworkaccountsconfig" class="tsd-kind-icon">Http<wbr>Network<wbr>Accounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#httpnetworkaccountsuserconfig" class="tsd-kind-icon">Http<wbr>Network<wbr>Accounts<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#intervalminingconfig" class="tsd-kind-icon">Interval<wbr>Mining<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#jsonaccesslistitem" class="tsd-kind-icon">Json<wbr>Access<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#localnodeconfig" class="tsd-kind-icon">Local<wbr>Node<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#mempoolorder" class="tsd-kind-icon">Mempool<wbr>Order</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#messagetrace" class="tsd-kind-icon">Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#messagetracestep" class="tsd-kind-icon">Message<wbr>Trace<wbr>Step</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#nestedstructlogs" class="tsd-kind-icon">Nested<wbr>Struct<wbr>Logs</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#networkconfig" class="tsd-kind-icon">Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#networkuserconfig" class="tsd-kind-icon">Network<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#nodeconfig" class="tsd-kind-icon">Node<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#optionalrpcfilterrequest" class="tsd-kind-icon">Optional<wbr>Rpc<wbr>Filter<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#optionalrpclogaddress" class="tsd-kind-icon">Optional<wbr>Rpc<wbr>Log<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#optionalrpclogtopics" class="tsd-kind-icon">Optional<wbr>Rpc<wbr>Log<wbr>Topics</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#optionalrpcnewblocktag" class="tsd-kind-icon">Optional<wbr>Rpc<wbr>New<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#optionalrpcoldblocktag" class="tsd-kind-icon">Optional<wbr>Rpc<wbr>Old<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcaccesslist" class="tsd-kind-icon">Rpc<wbr>Access<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcaccesslistoutput" class="tsd-kind-icon">Rpc<wbr>Access<wbr>List<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcaccesslisttuple" class="tsd-kind-icon">Rpc<wbr>Access<wbr>List<wbr>Tuple</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcblock" class="tsd-kind-icon">Rpc<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcblockwithtransactions" class="tsd-kind-icon">Rpc<wbr>Block<wbr>With<wbr>Transactions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpccallrequest" class="tsd-kind-icon">Rpc<wbr>Call<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpccompilerinput" class="tsd-kind-icon">Rpc<wbr>Compiler<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpccompileroutput" class="tsd-kind-icon">Rpc<wbr>Compiler<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcdebugtracingconfig" class="tsd-kind-icon">Rpc<wbr>Debug<wbr>Tracing<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcfilterrequest" class="tsd-kind-icon">Rpc<wbr>Filter<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcforkconfig" class="tsd-kind-icon">Rpc<wbr>Fork<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpchardhatnetworkconfig" class="tsd-kind-icon">Rpc<wbr>Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcintervalmining" class="tsd-kind-icon">Rpc<wbr>Interval<wbr>Mining</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpclog" class="tsd-kind-icon">Rpc<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpclogaddress" class="tsd-kind-icon">Rpc<wbr>Log<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpclogtopics" class="tsd-kind-icon">Rpc<wbr>Log<wbr>Topics</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcnewblocktag" class="tsd-kind-icon">Rpc<wbr>New<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcoldblocktag" class="tsd-kind-icon">Rpc<wbr>Old<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcquantityornumber" class="tsd-kind-icon">Rpc<wbr>Quantity<wbr>OrNumber</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpcsubscriberequest" class="tsd-kind-icon">Rpc<wbr>Subscribe<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpctransaction" class="tsd-kind-icon">Rpc<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpctransactionoutput" class="tsd-kind-icon">Rpc<wbr>Transaction<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpctransactionreceipt" class="tsd-kind-icon">Rpc<wbr>Transaction<wbr>Receipt</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#rpctransactionrequest" class="tsd-kind-icon">Rpc<wbr>Transaction<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#runtaskfunction" class="tsd-kind-icon">Run<wbr>Task<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#sampleprojecttypecreationaction" class="tsd-kind-icon">Sample<wbr>Project<wbr>Type<wbr>Creation<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#sendtransactionresult" class="tsd-kind-icon">Send<wbr>Transaction<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#sendertransactions" class="tsd-kind-icon">Sender<wbr>Transactions</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#serializedtransaction" class="tsd-kind-icon">Serialized<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#soliditystacktrace" class="tsd-kind-icon">Solidity<wbr>Stack<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#soliditystacktraceentry" class="tsd-kind-icon">Solidity<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#solidityuserconfig" class="tsd-kind-icon">Solidity<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#state" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#storage" class="tsd-kind-icon">Storage</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#taskarguments" class="tsd-kind-icon">Task<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#transactionparams" class="tsd-kind-icon">Transaction<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#txdata" class="tsd-kind-icon">Tx<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#txvaluesarray" class="tsd-kind-icon">Tx<wbr>Values<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-external">
+						<a href="globals.html#typedtransaction" class="tsd-kind-icon">Typed<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#access_list_min_hardfork" class="tsd-kind-icon">ACCESS_<wbr>LIST_<wbr>MIN_<wbr>HARDFORK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#address_length_bytes" class="tsd-kind-icon">ADDRESS_<wbr>LENGTH_<wbr>BYTES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#analytics_slow_task_threshold" class="tsd-kind-icon">ANALYTICS_<wbr>SLOW_<wbr>TASK_<wbr>THRESHOLD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#anonymized_file" class="tsd-kind-icon">ANONYMIZED_<wbr>FILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#anonymized_mnemonic" class="tsd-kind-icon">ANONYMIZED_<wbr>MNEMONIC</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#artifact_format_version" class="tsd-kind-icon">ARTIFACT_<wbr>FORMAT_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#addressty" class="tsd-kind-icon">Address<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#berlin_eips" class="tsd-kind-icon">BERLIN_<wbr>EIPS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#build_info_dir_name" class="tsd-kind-icon">BUILD_<wbr>INFO_<wbr>DIR_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#build_info_format_version" class="tsd-kind-icon">BUILD_<wbr>INFO_<wbr>FORMAT_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#boolty" class="tsd-kind-icon">Bool<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes10ty" class="tsd-kind-icon">Bytes10<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes11ty" class="tsd-kind-icon">Bytes11<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes12ty" class="tsd-kind-icon">Bytes12<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes13ty" class="tsd-kind-icon">Bytes13<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes14ty" class="tsd-kind-icon">Bytes14<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes15ty" class="tsd-kind-icon">Bytes15<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes16ty" class="tsd-kind-icon">Bytes16<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes17ty" class="tsd-kind-icon">Bytes17<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes18ty" class="tsd-kind-icon">Bytes18<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes19ty" class="tsd-kind-icon">Bytes19<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes1ty" class="tsd-kind-icon">Bytes1<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes20ty" class="tsd-kind-icon">Bytes20<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes21ty" class="tsd-kind-icon">Bytes21<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes22ty" class="tsd-kind-icon">Bytes22<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes23ty" class="tsd-kind-icon">Bytes23<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes24ty" class="tsd-kind-icon">Bytes24<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes25ty" class="tsd-kind-icon">Bytes25<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes26ty" class="tsd-kind-icon">Bytes26<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes27ty" class="tsd-kind-icon">Bytes27<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes28ty" class="tsd-kind-icon">Bytes28<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes29ty" class="tsd-kind-icon">Bytes29<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes2ty" class="tsd-kind-icon">Bytes2<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes30ty" class="tsd-kind-icon">Bytes30<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes31ty" class="tsd-kind-icon">Bytes31<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes32ty" class="tsd-kind-icon">Bytes32<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes3ty" class="tsd-kind-icon">Bytes3<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes4ty" class="tsd-kind-icon">Bytes4<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes5ty" class="tsd-kind-icon">Bytes5<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes6ty" class="tsd-kind-icon">Bytes6<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes7ty" class="tsd-kind-icon">Bytes7<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes8ty" class="tsd-kind-icon">Bytes8<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytes9ty" class="tsd-kind-icon">Bytes9<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#bytesty" class="tsd-kind-icon">Bytes<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#compiler_files_dir_url_solc" class="tsd-kind-icon">COMPILER_<wbr>FILES_<wbr>DIR_<wbr>URL_<wbr>SOLC</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#compile_task_first_solc_version_supported" class="tsd-kind-icon">COMPILE_<wbr>TASK_<wbr>FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>SUPPORTED</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#console_address" class="tsd-kind-icon">CONSOLE_<wbr>ADDRESS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#constructor_function_name" class="tsd-kind-icon">CONSTRUCTOR_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#cachecodec" class="tsd-kind-icon">Cache<wbr>Codec</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#cacheentrycodec" class="tsd-kind-icon">Cache<wbr>Entry<wbr>Codec</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#debug_file_format_version" class="tsd-kind-icon">DEBUG_<wbr>FILE_<wbr>FORMAT_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#dec_string_regex" class="tsd-kind-icon">DEC_<wbr>STRING_<wbr>REGEX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_coinbase" class="tsd-kind-icon">DEFAULT_<wbr>COINBASE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_gas_multiplier" class="tsd-kind-icon">DEFAULT_<wbr>GAS_<wbr>MULTIPLIER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_hardhat_network_balance" class="tsd-kind-icon">DEFAULT_<wbr>HARDHAT_<wbr>NETWORK_<wbr>BALANCE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_solc_version" class="tsd-kind-icon">DEFAULT_<wbr>SOLC_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#dummy_gas_used" class="tsd-kind-icon">DUMMY_<wbr>GAS_<wbr>USED</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#dummy_return_data" class="tsd-kind-icon">DUMMY_<wbr>RETURN_<wbr>DATA</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#edit_distance_threshold" class="tsd-kind-icon">EDIT_<wbr>DISTANCE_<wbr>THRESHOLD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#eip1559_min_hardfork" class="tsd-kind-icon">EIP1559_<wbr>MIN_<wbr>HARDFORK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#eip155_min_hardfork" class="tsd-kind-icon">EIP155_<wbr>MIN_<wbr>HARDFORK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#eip170_bytecode_size_inclusive_limit" class="tsd-kind-icon">EIP170_<wbr>BYTECODE_<wbr>SIZE_<wbr>INCLUSIVE_<wbr>LIMIT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#empty_memory_word" class="tsd-kind-icon">EMPTY_<wbr>MEMORY_<wbr>WORD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#error_prefix" class="tsd-kind-icon">ERROR_<wbr>PREFIX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#error_selector" class="tsd-kind-icon">ERROR_<wbr>SELECTOR</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#fallback_function_name" class="tsd-kind-icon">FALLBACK_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#fallback_max_reorg" class="tsd-kind-icon">FALLBACK_<wbr>MAX_<wbr>REORG</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_hardfork_with_eip1559" class="tsd-kind-icon">FIRST_<wbr>HARDFORK_<wbr>WITH_<wbr>EIP1559</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_hardfork_with_transaction_type" class="tsd-kind-icon">FIRST_<wbr>HARDFORK_<wbr>WITH_<wbr>TRANSACTION_<wbr>TYPE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_solc_version_create_params_validation" class="tsd-kind-icon">FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>CREATE_<wbr>PARAMS_<wbr>VALIDATION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_solc_version_receive_function" class="tsd-kind-icon">FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>RECEIVE_<wbr>FUNCTION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_solc_version_supported" class="tsd-kind-icon">FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>SUPPORTED</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_solc_version_with_mapped_small_internal_functions" class="tsd-kind-icon">FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>WITH_<wbr>MAPPED_<wbr>SMALL_<wbr>INTERNAL_<wbr>FUNCTIONS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#first_solc_version_with_unmapped_reverts" class="tsd-kind-icon">FIRST_<wbr>SOLC_<wbr>VERSION_<wbr>WITH_<wbr>UNMAPPED_<wbr>REVERTS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#fork_http_timeout" class="tsd-kind-icon">FORK_<wbr>HTTP_<wbr>TIMEOUT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#format_version" class="tsd-kind-icon">FORMAT_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#fakesendertransactionprototype" class="tsd-kind-icon">Fake<wbr>Sender<wbr>Transaction<wbr>Prototype</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#ganache_gas_multiplier" class="tsd-kind-icon">GANACHE_<wbr>GAS_<wbr>MULTIPLIER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardforks_order" class="tsd-kind-icon">HARDFORKS_<wbr>ORDER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_complete_files" class="tsd-kind-icon">HARDHAT_<wbr>COMPLETE_<wbr>FILES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_env_argument_prefix" class="tsd-kind-icon">HARDHAT_<wbr>ENV_<wbr>ARGUMENT_<wbr>PREFIX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_executable_name" class="tsd-kind-icon">HARDHAT_<wbr>EXECUTABLE_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_mempool_supported_orders" class="tsd-kind-icon">HARDHAT_<wbr>MEMPOOL_<wbr>SUPPORTED_<wbr>ORDERS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_name" class="tsd-kind-icon">HARDHAT_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_default_gas_price" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>DEFAULT_<wbr>GAS_<wbr>PRICE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_default_initial_base_fee_per_gas" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>DEFAULT_<wbr>INITIAL_<wbr>BASE_<wbr>FEE_<wbr>PER_<wbr>GAS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_default_max_priority_fee_per_gas" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>DEFAULT_<wbr>MAX_<wbr>PRIORITY_<wbr>FEE_<wbr>PER_<wbr>GAS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_mnemonic" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>MNEMONIC</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_name" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_reset_event" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>RESET_<wbr>EVENT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_revert_snapshot_event" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>REVERT_<wbr>SNAPSHOT_<wbr>EVENT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_network_supported_hardforks" class="tsd-kind-icon">HARDHAT_<wbr>NETWORK_<wbr>SUPPORTED_<wbr>HARDFORKS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhat_package_name" class="tsd-kind-icon">HARDHAT_<wbr>PACKAGE_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hash_length_bytes" class="tsd-kind-icon">HASH_<wbr>LENGTH_<wbr>BYTES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hdaccountsconfig" class="tsd-kind-icon">HDAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hd_path_regex" class="tsd-kind-icon">HD_<wbr>PATH_<wbr>REGEX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hex_string_regex" class="tsd-kind-icon">HEX_<wbr>STRING_<wbr>REGEX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardforknametype" class="tsd-kind-icon">Hardfork<wbr>Name<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatconfig" class="tsd-kind-icon">Hardhat<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkaccount" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Account</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkchainconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chain<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkchainsconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Chains<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkforkingconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Forking<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkhdaccountsconfig" class="tsd-kind-icon">Hardhat<wbr>NetworkHDAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkhardforkhistory" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Hardfork<wbr>History</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkmempoolconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mempool<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatnetworkminingconfig" class="tsd-kind-icon">Hardhat<wbr>Network<wbr>Mining<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#httpheaders" class="tsd-kind-icon">Http<wbr>Headers</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#httpnetworkconfig" class="tsd-kind-icon">Http<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#intty" class="tsd-kind-icon">Int<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#integer" class="tsd-kind-icon">Integer</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#js_config_filename" class="tsd-kind-icon">JS_<wbr>CONFIG_<wbr>FILENAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#latest_block" class="tsd-kind-icon">LATEST_<wbr>BLOCK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#london_eips" class="tsd-kind-icon">LONDON_<wbr>EIPS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#margin_space" class="tsd-kind-icon">MARGIN_<wbr>SPACE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#max_precompile_number" class="tsd-kind-icon">MAX_<wbr>PRECOMPILE_<wbr>NUMBER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#max_retries" class="tsd-kind-icon">MAX_<wbr>RETRIES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#max_retry_await_seconds" class="tsd-kind-icon">MAX_<wbr>RETRY_<wbr>AWAIT_<wbr>SECONDS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#minimum_amount_of_words_to_anonymize" class="tsd-kind-icon">MINIMUM_<wbr>AMOUNT_<wbr>OF_<wbr>WORDS_<wbr>TO_<wbr>ANONYMIZE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#mnemonic_phrase_length_threshold" class="tsd-kind-icon">MNEMONIC_<wbr>PHRASE_<wbr>LENGTH_<wbr>THRESHOLD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#multisolcconfig" class="tsd-kind-icon">Multi<wbr>Solc<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#node_modules" class="tsd-kind-icon">NODE_<wbr>MODULES</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#n_div_2" class="tsd-kind-icon">N_<wbr>DIV_<wbr>2</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#networkconfig" class="tsd-kind-icon">Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#networkconfigaccounts" class="tsd-kind-icon">Network<wbr>Config<wbr>Accounts</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#networks" class="tsd-kind-icon">Networks</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#panic_selector" class="tsd-kind-icon">PANIC_<wbr>SELECTOR</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#precompile_function_name" class="tsd-kind-icon">PRECOMPILE_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#private_rpc_methods" class="tsd-kind-icon">PRIVATE_<wbr>RPC_<wbr>METHODS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#processenv" class="tsd-kind-icon">Process<wbr>Env</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#projectpaths" class="tsd-kind-icon">Project<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#receive_function_name" class="tsd-kind-icon">RECEIVE_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#register_size" class="tsd-kind-icon">REGISTER_<wbr>SIZE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#remote_format_version" class="tsd-kind-icon">REMOTE_<wbr>FORMAT_<wbr>VERSION</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#required_hh_version_range" class="tsd-kind-icon">REQUIRED_<wbr>HH_<wbr>VERSION_<wbr>RANGE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#readonlyvalidtransactionprototype" class="tsd-kind-icon">Read<wbr>Only<wbr>Valid<wbr>Transaction<wbr>Prototype</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#sentry_dsn" class="tsd-kind-icon">SENTRY_<wbr>DSN</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#solc_bug_9573_versions" class="tsd-kind-icon">SOLC_<wbr>BUG_<wbr>9573_<wbr>VERSIONS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#solidity_files_cache_filename" class="tsd-kind-icon">SOLIDITY_<wbr>FILES_<wbr>CACHE_<wbr>FILENAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#supported_solidity_version_range" class="tsd-kind-icon">SUPPORTED_<wbr>SOLIDITY_<wbr>VERSION_<wbr>RANGE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#singlesolcconfig" class="tsd-kind-icon">Single<wbr>Solc<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#solidityconfig" class="tsd-kind-icon">Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#stringty" class="tsd-kind-icon">String<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_check" class="tsd-kind-icon">TASK_<wbr>CHECK</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_clean" class="tsd-kind-icon">TASK_<wbr>CLEAN</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_clean_global" class="tsd-kind-icon">TASK_<wbr>CLEAN_<wbr>GLOBAL</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile" class="tsd-kind-icon">TASK_<wbr>COMPILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_get_compilation_tasks" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>GET_<wbr>COMPILATION_<wbr>TASKS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_remove_obsolete_artifacts" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>REMOVE_<wbr>OBSOLETE_<wbr>ARTIFACTS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_check_errors" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>CHECK_<wbr>ERRORS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_compile" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>COMPILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_compile_job" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>COMPILE_<wbr>JOB</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_compile_jobs" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>COMPILE_<wbr>JOBS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_compile_solc" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>COMPILE_<wbr>SOLC</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_emit_artifacts" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>EMIT_<wbr>ARTIFACTS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_filter_compilation_jobs" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>FILTER_<wbr>COMPILATION_<wbr>JOBS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_artifact_from_compilation_output" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>ARTIFACT_<wbr>FROM_<wbr>COMPILATION_<wbr>OUTPUT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_compilation_jobs" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>COMPILATION_<wbr>JOBS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_compilation_jobs_failure_reasons" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>COMPILATION_<wbr>JOBS_<wbr>FAILURE_<wbr>REASONS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_compilation_job_for_file" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>COMPILATION_<wbr>JOB_<wbr>FOR_<wbr>FILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_compiler_input" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>COMPILER_<wbr>INPUT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_dependency_graph" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>DEPENDENCY_<wbr>GRAPH</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_solc_build" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>SOLC_<wbr>BUILD</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_source_names" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>SOURCE_<wbr>NAMES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_get_source_paths" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>GET_<wbr>SOURCE_<wbr>PATHS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_handle_compilation_jobs_failures" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>HANDLE_<wbr>COMPILATION_<wbr>JOBS_<wbr>FAILURES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_compilation_errors" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>COMPILATION_<wbr>ERRORS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_compilation_result" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>COMPILATION_<wbr>RESULT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_download_compiler_end" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>DOWNLOAD_<wbr>COMPILER_<wbr>END</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_download_compiler_start" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>DOWNLOAD_<wbr>COMPILER_<wbr>START</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_nothing_to_compile" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>NOTHING_<wbr>TO_<wbr>COMPILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_run_compiler_end" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>RUN_<wbr>COMPILER_<wbr>END</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_log_run_compiler_start" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>LOG_<wbr>RUN_<wbr>COMPILER_<wbr>START</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_merge_compilation_jobs" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>MERGE_<wbr>COMPILATION_<wbr>JOBS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_read_file" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>READ_<wbr>FILE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_run_solc" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>RUN_<wbr>SOLC</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_compile_solidity_run_solcjs" class="tsd-kind-icon">TASK_<wbr>COMPILE_<wbr>SOLIDITY_<wbr>RUN_<wbr>SOLCJS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_console" class="tsd-kind-icon">TASK_<wbr>CONSOLE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_flatten" class="tsd-kind-icon">TASK_<wbr>FLATTEN</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_flatten_get_dependency_graph" class="tsd-kind-icon">TASK_<wbr>FLATTEN_<wbr>GET_<wbr>DEPENDENCY_<wbr>GRAPH</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_flatten_get_flattened_source" class="tsd-kind-icon">TASK_<wbr>FLATTEN_<wbr>GET_<wbr>FLATTENED_<wbr>SOURCE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_help" class="tsd-kind-icon">TASK_<wbr>HELP</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_node" class="tsd-kind-icon">TASK_<wbr>NODE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_node_create_server" class="tsd-kind-icon">TASK_<wbr>NODE_<wbr>CREATE_<wbr>SERVER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_node_get_provider" class="tsd-kind-icon">TASK_<wbr>NODE_<wbr>GET_<wbr>PROVIDER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_node_server_created" class="tsd-kind-icon">TASK_<wbr>NODE_<wbr>SERVER_<wbr>CREATED</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_node_server_ready" class="tsd-kind-icon">TASK_<wbr>NODE_<wbr>SERVER_<wbr>READY</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_run" class="tsd-kind-icon">TASK_<wbr>RUN</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_test" class="tsd-kind-icon">TASK_<wbr>TEST</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_test_get_test_files" class="tsd-kind-icon">TASK_<wbr>TEST_<wbr>GET_<wbr>TEST_<wbr>FILES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_test_run_mocha_tests" class="tsd-kind-icon">TASK_<wbr>TEST_<wbr>RUN_<wbr>MOCHA_<wbr>TESTS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_test_run_show_fork_recommendations" class="tsd-kind-icon">TASK_<wbr>TEST_<wbr>RUN_<wbr>SHOW_<wbr>FORK_<wbr>RECOMMENDATIONS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#task_test_setup_test_environment" class="tsd-kind-icon">TASK_<wbr>TEST_<wbr>SETUP_<wbr>TEST_<wbr>ENVIRONMENT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#telemetry_consent_timeout" class="tsd-kind-icon">TELEMETRY_<wbr>CONSENT_<wbr>TIMEOUT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#temp_file_prefix" class="tsd-kind-icon">TEMP_<wbr>FILE_<wbr>PREFIX</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#too_many_request_status" class="tsd-kind-icon">TOO_<wbr>MANY_<wbr>REQUEST_<wbr>STATUS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#transaction_type" class="tsd-kind-icon">TRANSACTION_<wbr>TYPE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-external">
+						<a href="globals.html#transaction_type_buffer" class="tsd-kind-icon">TRANSACTION_<wbr>TYPE_<wbr>BUFFER</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#ts_config_filename" class="tsd-kind-icon">TS_<wbr>CONFIG_<wbr>FILENAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#unknown_function_name" class="tsd-kind-icon">UNKNOWN_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#unrecognized_contract_name" class="tsd-kind-icon">UNRECOGNIZED_<wbr>CONTRACT_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#unrecognized_function_name" class="tsd-kind-icon">UNRECOGNIZED_<wbr>FUNCTION_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#uintty" class="tsd-kind-icon">Uint<wbr>Ty</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_phony_variable_to_force_errors_to_be_of_type_error_descriptor" class="tsd-kind-icon">_PHONY_<wbr>VARIABLE_<wbr>TO_<wbr>FORCE_<wbr>ERRORS_<wbr>TO_<wbr>BE_<wbr>OF_<wbr>TYPE_<wbr>ERROR_<wbr>DESCRIPTOR</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#address" class="tsd-kind-icon">address</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#argumentsparser" class="tsd-kind-icon">arguments<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#cachedistypescriptsupported" class="tsd-kind-icon">cached<wbr>IsTypescript<wbr>Supported</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#childprocess" class="tsd-kind-icon">child<wbr>Process</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#ctx" class="tsd-kind-icon">ctx</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#decimalstring" class="tsd-kind-icon">decimal<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#defaultdefaultnetwork" class="tsd-kind-icon">default<wbr>Default<wbr>Network</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#emojienabled" class="tsd-kind-icon">emoji<wbr>Enabled</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#env" class="tsd-kind-icon">env</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#envvariablearguments" class="tsd-kind-icon">env<wbr>Variable<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#googleanalyticsurl" class="tsd-kind-icon">google<wbr>Analytics<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatarguments" class="tsd-kind-icon">hardhat<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hardhatversion" class="tsd-kind-icon">hardhat<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#hexstring" class="tsd-kind-icon">hex<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#inspect" class="tsd-kind-icon">inspect</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#internaltask" class="tsd-kind-icon">internal<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#log" class="tsd-kind-icon">log</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#makeaccountstate" class="tsd-kind-icon">make<wbr>Account<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#makeemptyaccountstate" class="tsd-kind-icon">make<wbr>Empty<wbr>Account<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#makepoolstate" class="tsd-kind-icon">make<wbr>Pool<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#makeserializedtransaction" class="tsd-kind-icon">make<wbr>Serialized<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#next" class="tsd-kind-icon">next</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#nodeargs" class="tsd-kind-icon">node<wbr>Args</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpcfilterrequest" class="tsd-kind-icon">optional<wbr>Rpc<wbr>Filter<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpchardhatnetworkconfig" class="tsd-kind-icon">optional<wbr>Rpc<wbr>Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpclogaddress" class="tsd-kind-icon">optional<wbr>Rpc<wbr>Log<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpclogtopics" class="tsd-kind-icon">optional<wbr>Rpc<wbr>Log<wbr>Topics</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpcnewblocktag" class="tsd-kind-icon">optional<wbr>Rpc<wbr>New<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#optionalrpcoldblocktag" class="tsd-kind-icon">optional<wbr>Rpc<wbr>Old<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#previousfromtxdata" class="tsd-kind-icon">previous<wbr>From<wbr>TxData</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcaccesslist" class="tsd-kind-icon">rpc<wbr>Access<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcaccesslisttuple" class="tsd-kind-icon">rpc<wbr>Access<wbr>List<wbr>Tuple</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcaddress" class="tsd-kind-icon">rpc<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcblock" class="tsd-kind-icon">rpc<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcblocktagname" class="tsd-kind-icon">rpc<wbr>Block<wbr>Tag<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcblockwithtransactions" class="tsd-kind-icon">rpc<wbr>Block<wbr>With<wbr>Transactions</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpccallrequest" class="tsd-kind-icon">rpc<wbr>Call<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpccompilerinput" class="tsd-kind-icon">rpc<wbr>Compiler<wbr>Input</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpccompileroutput" class="tsd-kind-icon">rpc<wbr>Compiler<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcdata" class="tsd-kind-icon">rpc<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcdebugtracingconfig" class="tsd-kind-icon">rpc<wbr>Debug<wbr>Tracing<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcfilterrequest" class="tsd-kind-icon">rpc<wbr>Filter<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcfloat" class="tsd-kind-icon">rpc<wbr>Float</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcforkconfig" class="tsd-kind-icon">rpc<wbr>Fork<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpchardhatnetworkconfig" class="tsd-kind-icon">rpc<wbr>Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpchash" class="tsd-kind-icon">rpc<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcintervalmining" class="tsd-kind-icon">rpc<wbr>Interval<wbr>Mining</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcintervalminingrange" class="tsd-kind-icon">rpc<wbr>Interval<wbr>Mining<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpclog" class="tsd-kind-icon">rpc<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpclogaddress" class="tsd-kind-icon">rpc<wbr>Log<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpclogtopics" class="tsd-kind-icon">rpc<wbr>Log<wbr>Topics</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcnewblocktag" class="tsd-kind-icon">rpc<wbr>New<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcnewblocktagobjectwithhash" class="tsd-kind-icon">rpc<wbr>New<wbr>Block<wbr>Tag<wbr>Object<wbr>With<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcnewblocktagobjectwithnumber" class="tsd-kind-icon">rpc<wbr>New<wbr>Block<wbr>Tag<wbr>Object<wbr>With<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcoldblocktag" class="tsd-kind-icon">rpc<wbr>Old<wbr>Block<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcquantity" class="tsd-kind-icon">rpc<wbr>Quantity</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcquantityasnumber" class="tsd-kind-icon">rpc<wbr>Quantity<wbr>AsNumber</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcquantityornumber" class="tsd-kind-icon">rpc<wbr>Quantity<wbr>OrNumber</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcsubscriberequest" class="tsd-kind-icon">rpc<wbr>Subscribe<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpctransaction" class="tsd-kind-icon">rpc<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpctransactionreceipt" class="tsd-kind-icon">rpc<wbr>Transaction<wbr>Receipt</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpctransactionrequest" class="tsd-kind-icon">rpc<wbr>Transaction<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rpcunsignedinteger" class="tsd-kind-icon">rpc<wbr>Unsigned<wbr>Integer</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#types" class="tsd-kind-icon">types</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#unsafeobjectkeys" class="tsd-kind-icon">unsafe<wbr>Object<wbr>Keys</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#_applyerrormessagetemplate" class="tsd-kind-icon">_apply<wbr>Error<wbr>Message<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#_handleerror" class="tsd-kind-icon">_handle<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#_readjsonhttprequest" class="tsd-kind-icon">_read<wbr>Json<wbr>Http<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#_readwsrequest" class="tsd-kind-icon">_read<wbr>WsRequest</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#addgitignore" class="tsd-kind-icon">add<wbr>Git<wbr>Ignore</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#addunmappedinstructions" class="tsd-kind-icon">add<wbr>Unmapped<wbr>Instructions</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#adjuststacktrace" class="tsd-kind-icon">adjust<wbr>Stack<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#analyzemodulenotfounderror" class="tsd-kind-icon">analyze<wbr>Module<wbr>Not<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#applycontractsinheritance" class="tsd-kind-icon">apply<wbr>Contracts<wbr>Inheritance</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#applyerrormessagetemplate" class="tsd-kind-icon">apply<wbr>Error<wbr>Message<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#applyproviderwrappers" class="tsd-kind-icon">apply<wbr>Provider<wbr>Wrappers</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#applyworkaround" class="tsd-kind-icon">apply<wbr>Workaround</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#arepreviousmtimescorrect" class="tsd-kind-icon">are<wbr>Previous<wbr>Mtimes<wbr>Correct</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#arraysdifference" class="tsd-kind-icon">arrays<wbr>Difference</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#asserthardhatinvariant" class="tsd-kind-icon">assert<wbr>Hardhat<wbr>Invariant</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#asserthardhatnetworkinvariant" class="tsd-kind-icon">assert<wbr>Hardhat<wbr>Network<wbr>Invariant</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#astfunctiondefinitiontoselector" class="tsd-kind-icon">ast<wbr>Function<wbr>Definition<wbr>ToSelector</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#astsrctosourcelocation" class="tsd-kind-icon">ast<wbr>Src<wbr>ToSource<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#astvisibilitytovisibility" class="tsd-kind-icon">ast<wbr>Visibility<wbr>ToVisibility</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#bloomfilter" class="tsd-kind-icon">bloom<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#bntohex" class="tsd-kind-icon">bn<wbr>ToHex</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buffertorpcdata" class="tsd-kind-icon">buffer<wbr>ToRpc<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#caninstallrecommendeddeps" class="tsd-kind-icon">can<wbr>Install<wbr>Recommended<wbr>Deps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#canonicalabitypeforelementaryoruserdefinedtypes" class="tsd-kind-icon">canonical<wbr>Abi<wbr>Type<wbr>For<wbr>Elementary<wbr>OrUser<wbr>Defined<wbr>Types</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkemptyconfig" class="tsd-kind-icon">check<wbr>Empty<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkforduplicates" class="tsd-kind-icon">check<wbr>For<wbr>Duplicates</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkmissingsolidityconfig" class="tsd-kind-icon">check<wbr>Missing<wbr>Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checksolcbinary" class="tsd-kind-icon">check<wbr>Solc<wbr>Binary</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkunsupportedremappings" class="tsd-kind-icon">check<wbr>Unsupported<wbr>Remappings</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkunsupportedsolidityconfig" class="tsd-kind-icon">check<wbr>Unsupported<wbr>Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#checkpointederror" class="tsd-kind-icon">checkpointed<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#complete" class="tsd-kind-icon">complete</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#confirmrecommendeddepsinstallation" class="tsd-kind-icon">confirm<wbr>Recommended<wbr>Deps<wbr>Installation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#confirmtelemetryconsent" class="tsd-kind-icon">confirm<wbr>Telemetry<wbr>Consent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#contractkindtocontracttype" class="tsd-kind-icon">contract<wbr>Kind<wbr>ToContract<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#copysampleproject" class="tsd-kind-icon">copy<wbr>Sample<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#correctselectors" class="tsd-kind-icon">correct<wbr>Selectors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createcompilationjobfromfile" class="tsd-kind-icon">create<wbr>Compilation<wbr>Job<wbr>From<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createcompilationjobsfromconnectedcomponent" class="tsd-kind-icon">create<wbr>Compilation<wbr>Jobs<wbr>From<wbr>Connected<wbr>Component</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createconfirmationprompt" class="tsd-kind-icon">create<wbr>Confirmation<wbr>Prompt</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#createlazyproxy" class="tsd-kind-icon">create<wbr>Lazy<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createmodelsanddecodebytecodes" class="tsd-kind-icon">create<wbr>Models<wbr>And<wbr>Decode<wbr>Bytecodes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createnoncryptographichashbasedidentifier" class="tsd-kind-icon">create<wbr>Non<wbr>Cryptographic<wbr>Hash<wbr>Based<wbr>Identifier</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createpackagejson" class="tsd-kind-icon">create<wbr>Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createproject" class="tsd-kind-icon">create<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createprovider" class="tsd-kind-icon">create<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createsourcesmodelfromast" class="tsd-kind-icon">create<wbr>Sources<wbr>Model<wbr>From<wbr>Ast</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#datetotimestampseconds" class="tsd-kind-icon">date<wbr>ToTimestamp<wbr>Seconds</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#decodebytecodes" class="tsd-kind-icon">decode<wbr>Bytecodes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#decodeevmbytecode" class="tsd-kind-icon">decode<wbr>Evm<wbr>Bytecode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#decodeinstructions" class="tsd-kind-icon">decode<wbr>Instructions</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#decodejsonrpcresponse" class="tsd-kind-icon">decode<wbr>Json<wbr>Rpc<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#decreasingordercomparator" class="tsd-kind-icon">decreasing<wbr>Order<wbr>Comparator</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#decreasingordereffectiveminerfeecomparator" class="tsd-kind-icon">decreasing<wbr>Order<wbr>Effective<wbr>Miner<wbr>Fee<wbr>Comparator</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#deepfreezeuserconfig" class="tsd-kind-icon">deep<wbr>Freeze<wbr>User<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#derivekeyfrommnemonicandpath" class="tsd-kind-icon">derive<wbr>Key<wbr>From<wbr>Mnemonic<wbr>And<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#deriveprivatekeys" class="tsd-kind-icon">derive<wbr>Private<wbr>Keys</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#deserializetransaction" class="tsd-kind-icon">deserialize<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#disablereplwritershowproxy" class="tsd-kind-icon">disable<wbr>Repl<wbr>Writer<wbr>Show<wbr>Proxy</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#displaybanner" class="tsd-kind-icon">display<wbr>Banner</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#divup" class="tsd-kind-icon">div<wbr>Up</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#download" class="tsd-kind-icon">download</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#emoji" class="tsd-kind-icon">emoji</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#enableemoji" class="tsd-kind-icon">enable<wbr>Emoji</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#encodesoliditystacktrace" class="tsd-kind-icon">encode<wbr>Solidity<wbr>Stack<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#encodestacktraceentry" class="tsd-kind-icon">encode<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#encodestoragekey" class="tsd-kind-icon">encode<wbr>Storage<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#experimentaladdhardhatnetworkmessagetracehook" class="tsd-kind-icon">experimental<wbr>Add<wbr>Hardhat<wbr>Network<wbr>Message<wbr>Trace<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#extendconfig" class="tsd-kind-icon">extend<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#extendenvironment" class="tsd-kind-icon">extend<wbr>Environment</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#failure" class="tsd-kind-icon">failure</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#filterlogs" class="tsd-kind-icon">filter<wbr>Logs</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#findclosestpackagejson" class="tsd-kind-icon">find<wbr>Closest<wbr>Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#finddistance" class="tsd-kind-icon">find<wbr>Distance</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#findimportswithregexps" class="tsd-kind-icon">find<wbr>Imports<wbr>With<wbr>Regexps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#findversionpragmaswithregexps" class="tsd-kind-icon">find<wbr>Version<wbr>Pragmas<wbr>With<wbr>Regexps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#flattensourcereference" class="tsd-kind-icon">flatten<wbr>Source<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#fromentries" class="tsd-kind-icon">from<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#functiondefinitionkindtofunctiontype" class="tsd-kind-icon">function<wbr>Definition<wbr>Kind<wbr>ToFunction<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#generatepaths" class="tsd-kind-icon">generate<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#generatepathssync" class="tsd-kind-icon">generate<wbr>Paths<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getaction" class="tsd-kind-icon">get<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getallwordmatches" class="tsd-kind-icon">get<wbr>All<wbr>Word<wbr>Matches</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getalreadyshownfilepath" class="tsd-kind-icon">get<wbr>Already<wbr>Shown<wbr>File<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getartifactfromcontractoutput" class="tsd-kind-icon">get<wbr>Artifact<wbr>From<wbr>Contract<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getblockbynumber" class="tsd-kind-icon">get<wbr>Block<wbr>ByNumber</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcachedir" class="tsd-kind-icon">get<wbr>Cache<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcachedcompletiondata" class="tsd-kind-icon">get<wbr>Cached<wbr>Completion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcachedcompletiondatapath" class="tsd-kind-icon">get<wbr>Cached<wbr>Completion<wbr>Data<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getclientid" class="tsd-kind-icon">get<wbr>Client<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getclosestcallerpackage" class="tsd-kind-icon">get<wbr>Closest<wbr>Caller<wbr>Package</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompilationjobcreationerror" class="tsd-kind-icon">get<wbr>Compilation<wbr>Job<wbr>Creation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompilerconfigforfile" class="tsd-kind-icon">get<wbr>Compiler<wbr>Config<wbr>For<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompilerlisturl" class="tsd-kind-icon">get<wbr>Compiler<wbr>ListURL</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompilerurl" class="tsd-kind-icon">get<wbr>CompilerURL</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompilersdir" class="tsd-kind-icon">get<wbr>Compilers<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcompletiondata" class="tsd-kind-icon">get<wbr>Completion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getconfigdirsync" class="tsd-kind-icon">get<wbr>Config<wbr>Dir<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcontextpath" class="tsd-kind-icon">get<wbr>Context<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcurrentstack" class="tsd-kind-icon">get<wbr>Current<wbr>Stack</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getcurrenttimestamp" class="tsd-kind-icon">get<wbr>Current<wbr>Timestamp</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getdatadir" class="tsd-kind-icon">get<wbr>Data<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getdependencies" class="tsd-kind-icon">get<wbr>Dependencies</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getdifferenceinseconds" class="tsd-kind-icon">get<wbr>Difference<wbr>InSeconds</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#geteffectivegasprice" class="tsd-kind-icon">get<wbr>Effective<wbr>Gas<wbr>Price</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#geteffectiveminerfee" class="tsd-kind-icon">get<wbr>Effective<wbr>Miner<wbr>Fee</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getenvhardhatarguments" class="tsd-kind-icon">get<wbr>Env<wbr>Hardhat<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getenvvariablesmap" class="tsd-kind-icon">get<wbr>Env<wbr>Variables<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#geterrorcode" class="tsd-kind-icon">get<wbr>Error<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#geterrormessage" class="tsd-kind-icon">get<wbr>Error<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getfilewithoutimports" class="tsd-kind-icon">get<wbr>File<wbr>Without<wbr>Imports</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getforkcachedirpath" class="tsd-kind-icon">get<wbr>Fork<wbr>Cache<wbr>Dir<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getformattedinternalcompilererrormessage" class="tsd-kind-icon">get<wbr>Formatted<wbr>Internal<wbr>Compiler<wbr>Error<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getfullyqualifiedname" class="tsd-kind-icon">get<wbr>Fully<wbr>Qualified<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#gethardforkname" class="tsd-kind-icon">get<wbr>Hardfork<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#gethardhatversion" class="tsd-kind-icon">get<wbr>Hardhat<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getinputfromcompilationjob" class="tsd-kind-icon">get<wbr>Input<wbr>From<wbr>Compilation<wbr>Job</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getlargestpossiblereorg" class="tsd-kind-icon">get<wbr>Largest<wbr>Possible<wbr>Reorg</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getlatestblocknumber" class="tsd-kind-icon">get<wbr>Latest<wbr>Block<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getlibraryaddresspositions" class="tsd-kind-icon">get<wbr>Library<wbr>Address<wbr>Positions</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmaximalmnemonicphrase" class="tsd-kind-icon">get<wbr>Maximal<wbr>Mnemonic<wbr>Phrase</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmessage" class="tsd-kind-icon">get<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmessagefromlaststacktraceentry" class="tsd-kind-icon">get<wbr>Message<wbr>From<wbr>Last<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getmtimes" class="tsd-kind-icon">get<wbr>Mtimes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getnetworkid" class="tsd-kind-icon">get<wbr>Network<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getopcodelength" class="tsd-kind-icon">get<wbr>Opcode<wbr>Length</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getoperatingsystem" class="tsd-kind-icon">get<wbr>Operating<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getorderedtransactionheap" class="tsd-kind-icon">get<wbr>Ordered<wbr>Transaction<wbr>Heap</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpackagejson" class="tsd-kind-icon">get<wbr>Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpackagejsonpath" class="tsd-kind-icon">get<wbr>Package<wbr>Json<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpackageroot" class="tsd-kind-icon">get<wbr>Package<wbr>Root</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpathtruecase" class="tsd-kind-icon">get<wbr>Path<wbr>True<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getprivatekeyerror" class="tsd-kind-icon">get<wbr>Private<wbr>Key<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getprojectid" class="tsd-kind-icon">get<wbr>Project<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpublicvariableselectorfromdeclarationastnode" class="tsd-kind-icon">get<wbr>Public<wbr>Variable<wbr>Selector<wbr>From<wbr>Declaration<wbr>Ast<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpushlength" class="tsd-kind-icon">get<wbr>Push<wbr>Length</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrecommendeddependenciesinstallationcommand" class="tsd-kind-icon">get<wbr>Recommended<wbr>Dependencies<wbr>Installation<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrecommendedgitignore" class="tsd-kind-icon">get<wbr>Recommended<wbr>Git<wbr>Ignore</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrequirecachedfiles" class="tsd-kind-icon">get<wbr>Require<wbr>Cached<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrpcblock" class="tsd-kind-icon">get<wbr>Rpc<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrpclogoutput" class="tsd-kind-icon">get<wbr>Rpc<wbr>Log<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrpcreceiptoutputsfromlocalblockexecution" class="tsd-kind-icon">get<wbr>Rpc<wbr>Receipt<wbr>Outputs<wbr>From<wbr>Local<wbr>Block<wbr>Execution</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrpctransaction" class="tsd-kind-icon">get<wbr>Rpc<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getsolidityfilescachepath" class="tsd-kind-icon">get<wbr>Solidity<wbr>Files<wbr>Cache<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getsortedfiles" class="tsd-kind-icon">get<wbr>Sorted<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getsubprocesstransport" class="tsd-kind-icon">get<wbr>Subprocess<wbr>Transport</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#gettsnodeargsifneeded" class="tsd-kind-icon">get<wbr>TsNode<wbr>Args<wbr>IfNeeded</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getuseragent" class="tsd-kind-icon">get<wbr>User<wbr>Agent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getuserconfigpath" class="tsd-kind-icon">get<wbr>User<wbr>Config<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getusertype" class="tsd-kind-icon">get<wbr>User<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getvalidationerrors" class="tsd-kind-icon">get<wbr>Validation<wbr>Errors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#glob" class="tsd-kind-icon">glob</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#globsync" class="tsd-kind-icon">glob<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#hardforkgte" class="tsd-kind-icon">hardfork<wbr>Gte</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#hascompilationerrors" class="tsd-kind-icon">has<wbr>Compilation<wbr>Errors</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#hasconsentedtelemetry" class="tsd-kind-icon">has<wbr>Consented<wbr>Telemetry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#importcsjoresmodule" class="tsd-kind-icon">import<wbr>Csj<wbr>OrEs<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#importprovider" class="tsd-kind-icon">import<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#includes" class="tsd-kind-icon">includes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#installdependencies" class="tsd-kind-icon">install<wbr>Dependencies</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#installrecommendeddependencies" class="tsd-kind-icon">install<wbr>Recommended<wbr>Dependencies</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#instructiontocallstackstacktraceentry" class="tsd-kind-icon">instruction<wbr>ToCallstack<wbr>Stack<wbr>Trace<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#invalidatecachemissingartifacts" class="tsd-kind-icon">invalidate<wbr>Cache<wbr>Missing<wbr>Artifacts</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isabsolutepathsourcename" class="tsd-kind-icon">is<wbr>Absolute<wbr>Path<wbr>Source<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#isaccesslist" class="tsd-kind-icon">is<wbr>Access<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="globals.html#isaccesslistbuffer" class="tsd-kind-icon">is<wbr>Access<wbr>List<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isaddress" class="tsd-kind-icon">is<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isawscodebuild" class="tsd-kind-icon">is<wbr>Aws<wbr>Code<wbr>Build</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscliargumenttype" class="tsd-kind-icon">isCLIArgument<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscall" class="tsd-kind-icon">is<wbr>Call</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscallinvalidparamserror" class="tsd-kind-icon">is<wbr>Call<wbr>Invalid<wbr>Params<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscalltrace" class="tsd-kind-icon">is<wbr>Call<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscompilationjobcreationerror" class="tsd-kind-icon">is<wbr>Compilation<wbr>Job<wbr>Creation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isconsolelogerror" class="tsd-kind-icon">is<wbr>Console<wbr>Log<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isconstructorinvalidparamserror" class="tsd-kind-icon">is<wbr>Constructor<wbr>Invalid<wbr>Params<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscontracttype" class="tsd-kind-icon">is<wbr>Contract<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscreate" class="tsd-kind-icon">is<wbr>Create</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscreatetrace" class="tsd-kind-icon">is<wbr>Create<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iscwdinsideproject" class="tsd-kind-icon">is<wbr>Cwd<wbr>Inside<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdecimalstring" class="tsd-kind-icon">is<wbr>Decimal<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdecodedcalltrace" class="tsd-kind-icon">is<wbr>Decoded<wbr>Call<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isdecodedcreatetrace" class="tsd-kind-icon">is<wbr>Decoded<wbr>Create<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iselementarytype" class="tsd-kind-icon">is<wbr>Elementary<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isenumtype" class="tsd-kind-icon">is<wbr>Enum<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#iserrorresponse" class="tsd-kind-icon">is<wbr>Error<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isevmstep" class="tsd-kind-icon">is<wbr>Evm<wbr>Step</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isexplicitrelativepath" class="tsd-kind-icon">is<wbr>Explicit<wbr>Relative<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isforkednodeconfig" class="tsd-kind-icon">is<wbr>Forked<wbr>Node<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isfullyqualifiedname" class="tsd-kind-icon">is<wbr>Fully<wbr>Qualified<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isgithubactions" class="tsd-kind-icon">is<wbr>Github<wbr>Actions</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isglobalflag" class="tsd-kind-icon">is<wbr>Global<wbr>Flag</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isglobalparam" class="tsd-kind-icon">is<wbr>Global<wbr>Param</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishdaccountsconfig" class="tsd-kind-icon">isHDAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishardhatinstalledlocallyorlinked" class="tsd-kind-icon">is<wbr>Hardhat<wbr>Installed<wbr>Locally<wbr>OrLinked</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishdaccountsconfig" class="tsd-kind-icon">is<wbr>HdAccounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishexprefixed" class="tsd-kind-icon">is<wbr>Hex<wbr>Prefixed</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishexstring" class="tsd-kind-icon">is<wbr>Hex<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ishttpnetworkconfig" class="tsd-kind-icon">is<wbr>Http<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isinstalled" class="tsd-kind-icon">is<wbr>Installed</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isinteger" class="tsd-kind-icon">is<wbr>Integer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isjump" class="tsd-kind-icon">is<wbr>Jump</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#islinuxwithoutdisplayserver" class="tsd-kind-icon">is<wbr>Linux<wbr>Without<wbr>Display<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#islocaldev" class="tsd-kind-icon">is<wbr>Local<wbr>Dev</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#islocalsourcename" class="tsd-kind-icon">is<wbr>Local<wbr>Source<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnodecalledwithoutascript" class="tsd-kind-icon">is<wbr>Node<wbr>Called<wbr>WithoutAScript</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnoncontractaccountcallederror" class="tsd-kind-icon">is<wbr>Non<wbr>Contract<wbr>Account<wbr>Called<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnow" class="tsd-kind-icon">is<wbr>Now</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnumber" class="tsd-kind-icon">is<wbr>Number</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isnumberpair" class="tsd-kind-icon">is<wbr>Number<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isprecompiletrace" class="tsd-kind-icon">is<wbr>Precompile<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#ispush" class="tsd-kind-icon">is<wbr>Push</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isresolvedhttpnetworkconfig" class="tsd-kind-icon">is<wbr>Resolved<wbr>Http<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrpcaddressstring" class="tsd-kind-icon">is<wbr>Rpc<wbr>Address<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrpcdatastring" class="tsd-kind-icon">is<wbr>Rpc<wbr>Data<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrpchashstring" class="tsd-kind-icon">is<wbr>Rpc<wbr>Hash<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrpcquantitystring" class="tsd-kind-icon">is<wbr>Rpc<wbr>Quantity<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrunninghardhatcoretests" class="tsd-kind-icon">is<wbr>Running<wbr>Hardhat<wbr>Core<wbr>Tests</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrunningonciserver" class="tsd-kind-icon">is<wbr>Running<wbr>OnCi<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isrunningwithtypescript" class="tsd-kind-icon">is<wbr>Running<wbr>With<wbr>Typescript</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isstructlog" class="tsd-kind-icon">is<wbr>Struct<wbr>Log</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#issuccessfuljsonresponse" class="tsd-kind-icon">is<wbr>Successful<wbr>Json<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#istypescriptfile" class="tsd-kind-icon">is<wbr>Typescript<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#istypescriptsupported" class="tsd-kind-icon">is<wbr>Typescript<wbr>Supported</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isvalidhardforkname" class="tsd-kind-icon">is<wbr>Valid<wbr>Hardfork<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isvalidjsonrequest" class="tsd-kind-icon">is<wbr>Valid<wbr>Json<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isvalidjsonresponse" class="tsd-kind-icon">is<wbr>Valid<wbr>Json<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#isyarnproject" class="tsd-kind-icon">is<wbr>Yarn<wbr>Project</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#jumplettertojumptype" class="tsd-kind-icon">jump<wbr>Letter<wbr>ToJump<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#lazyfunction" class="tsd-kind-icon">lazy<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#lazyobject" class="tsd-kind-icon">lazy<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#linkhexstringbytecode" class="tsd-kind-icon">link<wbr>Hex<wbr>String<wbr>Bytecode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#loadconfigandtasks" class="tsd-kind-icon">load<wbr>Config<wbr>And<wbr>Tasks</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#loadtsnode" class="tsd-kind-icon">load<wbr>TsNode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#localpathtosourcename" class="tsd-kind-icon">local<wbr>Path<wbr>ToSource<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#localsourcenametopath" class="tsd-kind-icon">local<wbr>Source<wbr>Name<wbr>ToPath</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#loghardhatnetworkaccounts" class="tsd-kind-icon">log<wbr>Hardhat<wbr>Network<wbr>Accounts</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#main" class="tsd-kind-icon">main</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makeaccount" class="tsd-kind-icon">make<wbr>Account</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makecommon" class="tsd-kind-icon">make<wbr>Common</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makeforkclient" class="tsd-kind-icon">make<wbr>Fork<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makeforkcommon" class="tsd-kind-icon">make<wbr>Fork<wbr>Common</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#makestatetrie" class="tsd-kind-icon">make<wbr>State<wbr>Trie</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#mapvalues" class="tsd-kind-icon">map<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#matchopcode" class="tsd-kind-icon">match<wbr>Opcode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#matchopcodes" class="tsd-kind-icon">match<wbr>Opcodes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#mergecompilationjobs" class="tsd-kind-icon">merge<wbr>Compilation<wbr>Jobs</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#mergecompilationjobswithbug" class="tsd-kind-icon">merge<wbr>Compilation<wbr>Jobs<wbr>With<wbr>Bug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#mergecompilationjobswithoutbug" class="tsd-kind-icon">merge<wbr>Compilation<wbr>Jobs<wbr>Without<wbr>Bug</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#needscompilation" class="tsd-kind-icon">needs<wbr>Compilation</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizecompileroutputbytecode" class="tsd-kind-icon">normalize<wbr>Compiler<wbr>Output<wbr>Bytecode</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizehardhatnetworkaccountsconfig" class="tsd-kind-icon">normalize<wbr>Hardhat<wbr>Network<wbr>Accounts<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizehexstring" class="tsd-kind-icon">normalize<wbr>Hex<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizelibraryruntimebytecodeifnecessary" class="tsd-kind-icon">normalize<wbr>Library<wbr>Runtime<wbr>Bytecode<wbr>IfNecessary</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizesolidityconfig" class="tsd-kind-icon">normalize<wbr>Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#normalizesourcename" class="tsd-kind-icon">normalize<wbr>Source<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#notcheckpointederror" class="tsd-kind-icon">not<wbr>Checkpointed<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#notsupportederror" class="tsd-kind-icon">not<wbr>Supported<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#nullable" class="tsd-kind-icon">nullable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#numbertorpcquantity" class="tsd-kind-icon">number<wbr>ToRpc<wbr>Quantity</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#optional" class="tsd-kind-icon">optional</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#optionalornullable" class="tsd-kind-icon">optional<wbr>OrNullable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#panicerrorcodetomessage" class="tsd-kind-icon">panic<wbr>Error<wbr>Code<wbr>ToMessage</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#panicerrorcodetoreason" class="tsd-kind-icon">panic<wbr>Error<wbr>Code<wbr>ToReason</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#paramnametoenvvariable" class="tsd-kind-icon">param<wbr>Name<wbr>ToEnv<wbr>Variable</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parsedatestring" class="tsd-kind-icon">parse<wbr>Date<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parsefullyqualifiedname" class="tsd-kind-icon">parse<wbr>Fully<wbr>Qualified<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parsejsonresponse" class="tsd-kind-icon">parse<wbr>Json<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parsename" class="tsd-kind-icon">parse<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#pluralize" class="tsd-kind-icon">pluralize</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printasciilogo" class="tsd-kind-icon">print<wbr>Ascii<wbr>Logo</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printcalltrace" class="tsd-kind-icon">print<wbr>Call<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printcreatetrace" class="tsd-kind-icon">print<wbr>Create<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printdefaultconfigwarning" class="tsd-kind-icon">print<wbr>Default<wbr>Config<wbr>Warning</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printline" class="tsd-kind-icon">print<wbr>Line</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printmessagetrace" class="tsd-kind-icon">print<wbr>Message<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printprecompiletrace" class="tsd-kind-icon">print<wbr>Precompile<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printrecommendeddepsinstallationinstructions" class="tsd-kind-icon">print<wbr>Recommended<wbr>Deps<wbr>Installation<wbr>Instructions</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printstacktrace" class="tsd-kind-icon">print<wbr>Stack<wbr>Trace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printversionmessage" class="tsd-kind-icon">print<wbr>Version<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printwarningaboutnodejsversionifnecessary" class="tsd-kind-icon">print<wbr>Warning<wbr>About<wbr>Node<wbr>JsVersion<wbr>IfNecessary</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#printwelcomemessage" class="tsd-kind-icon">print<wbr>Welcome<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#processcontractastnode" class="tsd-kind-icon">process<wbr>Contract<wbr>Ast<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#processfunctiondefinitionastnode" class="tsd-kind-icon">process<wbr>Function<wbr>Definition<wbr>Ast<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#processmodifierdefinitionastnode" class="tsd-kind-icon">process<wbr>Modifier<wbr>Definition<wbr>Ast<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#processvariabledeclarationastnode" class="tsd-kind-icon">process<wbr>Variable<wbr>Declaration<wbr>Ast<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#putgenesisblock" class="tsd-kind-icon">put<wbr>Genesis<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randomaddress" class="tsd-kind-icon">random<wbr>Address</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randomaddressbuffer" class="tsd-kind-icon">random<wbr>Address<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randomaddressstring" class="tsd-kind-icon">random<wbr>Address<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randomhash" class="tsd-kind-icon">random<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randomhashbuffer" class="tsd-kind-icon">random<wbr>Hash<wbr>Buffer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readanalyticsid" class="tsd-kind-icon">read<wbr>Analytics<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readfirstlegacyanalyticsid" class="tsd-kind-icon">read<wbr>First<wbr>Legacy<wbr>Analytics<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readid" class="tsd-kind-icon">read<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readpackagejson" class="tsd-kind-icon">read<wbr>Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readsecondlegacyanalyticsid" class="tsd-kind-icon">read<wbr>Second<wbr>Legacy<wbr>Analytics<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#remotereceipttorpcreceiptoutput" class="tsd-kind-icon">remote<wbr>Receipt<wbr>ToRpc<wbr>Receipt<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#removeprojectdirifpresent" class="tsd-kind-icon">remove<wbr>Project<wbr>Dir<wbr>IfPresent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#removerightzeros" class="tsd-kind-icon">remove<wbr>Right<wbr>Zeros</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#removetempfilesifpresent" class="tsd-kind-icon">remove<wbr>Temp<wbr>Files<wbr>IfPresent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#reorganizetransactionslists" class="tsd-kind-icon">reorganize<wbr>Transactions<wbr>Lists</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#replaceall" class="tsd-kind-icon">replace<wbr>All</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#replacebackslashes" class="tsd-kind-icon">replace<wbr>Backslashes</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#replacelastline" class="tsd-kind-icon">replace<wbr>Last<wbr>Line</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resethardhatcontext" class="tsd-kind-icon">reset<wbr>Hardhat<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvecompiler" class="tsd-kind-icon">resolve<wbr>Compiler</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolveconfig" class="tsd-kind-icon">resolve<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolveconfigpath" class="tsd-kind-icon">resolve<wbr>Config<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvehardhatnetworkconfig" class="tsd-kind-icon">resolve<wbr>Hardhat<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvehttpnetworkconfig" class="tsd-kind-icon">resolve<wbr>Http<wbr>Network<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvemempoolconfig" class="tsd-kind-icon">resolve<wbr>Mempool<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolveminingconfig" class="tsd-kind-icon">resolve<wbr>Mining<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvemochaconfig" class="tsd-kind-icon">resolve<wbr>Mocha<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvenetworksconfig" class="tsd-kind-icon">resolve<wbr>Networks<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvepathfrom" class="tsd-kind-icon">resolve<wbr>Path<wbr>From</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolveprojectpaths" class="tsd-kind-icon">resolve<wbr>Project<wbr>Paths</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvesolidityconfig" class="tsd-kind-icon">resolve<wbr>Solidity<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#resolvetempfilename" class="tsd-kind-icon">resolve<wbr>Temp<wbr>File<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpcdatatobn" class="tsd-kind-icon">rpc<wbr>Data<wbr>ToBN</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpcdatatobuffer" class="tsd-kind-icon">rpc<wbr>Data<wbr>ToBuffer</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpcdatatonumber" class="tsd-kind-icon">rpc<wbr>Data<wbr>ToNumber</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpcquantitytobn" class="tsd-kind-icon">rpc<wbr>Quantity<wbr>ToBN</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpcquantitytonumber" class="tsd-kind-icon">rpc<wbr>Quantity<wbr>ToNumber</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpctoblockdata" class="tsd-kind-icon">rpc<wbr>ToBlock<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rpctotxdata" class="tsd-kind-icon">rpc<wbr>ToTx<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#runscript" class="tsd-kind-icon">run<wbr>Script</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#runscriptwithhardhat" class="tsd-kind-icon">run<wbr>Script<wbr>With<wbr>Hardhat</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#savecachedcompletiondata" class="tsd-kind-icon">save<wbr>Cached<wbr>Completion<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#serializetransaction" class="tsd-kind-icon">serialize<wbr>Transaction</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#shouldshoweffectivegaspriceforhardfork" class="tsd-kind-icon">should<wbr>Show<wbr>Effective<wbr>Gas<wbr>Price<wbr>For<wbr>Hardfork</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#shouldshowtransactiontypeforhardfork" class="tsd-kind-icon">should<wbr>Show<wbr>Transaction<wbr>Type<wbr>For<wbr>Hardfork</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#showforkrecommendationsbannerifnecessary" class="tsd-kind-icon">show<wbr>Fork<wbr>Recommendations<wbr>Banner<wbr>IfNecessary</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sourcelocationtosourcereference" class="tsd-kind-icon">source<wbr>Location<wbr>ToSource<wbr>Reference</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sourcereferencetosoliditycallsite" class="tsd-kind-icon">source<wbr>Reference<wbr>ToSolidity<wbr>Callsite</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#stacktracemayrequireadjustments" class="tsd-kind-icon">stack<wbr>Trace<wbr>May<wbr>Require<wbr>Adjustments</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#stringify" class="tsd-kind-icon">stringify</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#subtask" class="tsd-kind-icon">subtask</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#success" class="tsd-kind-icon">success</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#task" class="tsd-kind-icon">task</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#tocanonicalabitype" class="tsd-kind-icon">to<wbr>Canonical<wbr>Abi<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#todecimalstring" class="tsd-kind-icon">to<wbr>Decimal<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#torpclogoutput" class="tsd-kind-icon">to<wbr>Rpc<wbr>Log<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#toword" class="tsd-kind-icon">to<wbr>Word</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#topicmatched" class="tsd-kind-icon">topic<wbr>Matched</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#tracesteps" class="tsd-kind-icon">trace<wbr>Steps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#txmaptoarray" class="tsd-kind-icon">tx<wbr>Map<wbr>ToArray</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#uncompresssourcemaps" class="tsd-kind-icon">uncompress<wbr>Sourcemaps</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#unloadmodule" class="tsd-kind-icon">unload<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#unsafeobjectentries" class="tsd-kind-icon">unsafe<wbr>Object<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#validateconfig" class="tsd-kind-icon">validate<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#validateparams" class="tsd-kind-icon">validate<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#validateprivatekey" class="tsd-kind-icon">validate<wbr>Private<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#validatesourcenameexistenceandcasing" class="tsd-kind-icon">validate<wbr>Source<wbr>Name<wbr>Existence<wbr>And<wbr>Casing</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#validatesourcenameformat" class="tsd-kind-icon">validate<wbr>Source<wbr>Name<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#watchcompileroutput" class="tsd-kind-icon">watch<wbr>Compiler<wbr>Output</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#weitohumanreadablestring" class="tsd-kind-icon">wei<wbr>ToHuman<wbr>Readable<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#willrunwithtypescript" class="tsd-kind-icon">will<wbr>Run<wbr>With<wbr>Typescript</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#withfixedinspectarg" class="tsd-kind-icon">with<wbr>Fixed<wbr>Inspect<wbr>Arg</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#wrapwithsolidityerrorscorrection" class="tsd-kind-icon">wrap<wbr>With<wbr>Solidity<wbr>Errors<wbr>Correction</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#writeanalyticsid" class="tsd-kind-icon">write<wbr>Analytics<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#writeemptyhardhatconfig" class="tsd-kind-icon">write<wbr>Empty<wbr>Hardhat<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#writetelemetryconsent" class="tsd-kind-icon">write<wbr>Telemetry<wbr>Consent</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#zerooutaddresses" class="tsd-kind-icon">zero<wbr>Out<wbr>Addresses</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#zerooutslices" class="tsd-kind-icon">zero<wbr>Out<wbr>Slices</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#advanced_sample_project_dependencies" class="tsd-kind-icon">ADVANCED_<wbr>SAMPLE_<wbr>PROJECT_<wbr>DEPENDENCIES</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#advanced_typescript_sample_project_dependencies" class="tsd-kind-icon">ADVANCED_<wbr>TYPESCRIPT_<wbr>SAMPLE_<wbr>PROJECT_<wbr>DEPENDENCIES</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#basic_sample_project_dependencies" class="tsd-kind-icon">BASIC_<wbr>SAMPLE_<wbr>PROJECT_<wbr>DEPENDENCIES</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#consolelogs" class="tsd-kind-icon">Console<wbr>Logs</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#dotpathreporter" class="tsd-kind-icon">Dot<wbr>Path<wbr>Reporter</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#errors" class="tsd-kind-icon">ERRORS</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#error_ranges" class="tsd-kind-icon">ERROR_<wbr>RANGES</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#hardhat_param_definitions" class="tsd-kind-icon">HARDHAT_<wbr>PARAM_<wbr>DEFINITIONS</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#sample_project_dependencies" class="tsd-kind-icon">SAMPLE_<wbr>PROJECT_<wbr>DEPENDENCIES</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#any" class="tsd-kind-icon">any</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#baseblockresponse" class="tsd-kind-icon">base<wbr>Block<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#boolean" class="tsd-kind-icon">boolean</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#commonhdaccountsfields" class="tsd-kind-icon">commonHDAccounts<wbr>Fields</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#commonnetworkconfigfields" class="tsd-kind-icon">common<wbr>Network<wbr>Config<wbr>Fields</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaulthardhatnetworkhdaccountsconfigparams" class="tsd-kind-icon">default<wbr>Hardhat<wbr>Network<wbr>HdAccounts<wbr>Config<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaulthardhatnetworkparams" class="tsd-kind-icon">default<wbr>Hardhat<wbr>Network<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaulthdaccountsconfigparams" class="tsd-kind-icon">default<wbr>HdAccounts<wbr>Config<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaulthttpnetworkparams" class="tsd-kind-icon">default<wbr>Http<wbr>Network<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaultlocalhostnetworkparams" class="tsd-kind-icon">default<wbr>Localhost<wbr>Network<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaultmochaoptions" class="tsd-kind-icon">default<wbr>Mocha<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#defaultsolcoutputselection" class="tsd-kind-icon">default<wbr>Solc<wbr>Output<wbr>Selection</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#float" class="tsd-kind-icon">float</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#inputfile" class="tsd-kind-icon">input<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#int" class="tsd-kind-icon">int</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#json" class="tsd-kind-icon">json</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#string" class="tsd-kind-icon">string</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
